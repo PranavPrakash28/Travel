@@ -4,7 +4,7 @@ import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
 function Footer() {
   return (
     <div className="bg-gray-800 text-white p-6">
-      {/* First div with logo, description, and icon */}
+      
       <div className="mb-8">
         <nav className="flex justify-center">
           <ul className="flex justify-between items-center w-full max-w-3xl">
@@ -19,10 +19,10 @@ function Footer() {
         </nav>
       </div>
 
-      {/* Vertically stacked sections with flexbox */}
+     
       <div className="flex justify-between flex-wrap text-white max-w-3xl mx-auto">
         
-        {/* Address Section */}
+       
         <nav className="flex-1 mr-4 mb-2 bg-gray-800 p-3">
           <ul className="space-y-1 text-justify">
             <li><p className="font-bold text-base">ADDRESS</p></li>
@@ -31,7 +31,7 @@ function Footer() {
           </ul>
         </nav>
 
-        {/* Phone and Email Section */}
+       
         <nav className="flex-1 mr-4 mb-2 bg-gray-800 p-3">
           <ul className="space-y-1 text-justify">
             <li><p className="font-bold text-base">PHONE NUMBER</p></li>
@@ -41,7 +41,7 @@ function Footer() {
           </ul>
         </nav>
 
-        {/* Navigation Links Section */}
+        
         <nav className="flex-1 mr-4 mb-2 bg-gray-800 p-3">
           <ul className="space-y-1 text-justify">
             <li><p className="font-bold text-base">NAVIGATION</p></li>
@@ -53,7 +53,7 @@ function Footer() {
           </ul>
         </nav>
 
-        {/* Contact and FAQ Section */}
+       
         <nav className="flex-1 mb-2 bg-gray-800 p-3">
           <ul className="space-y-1 text-justify">
             <li><p className="font-bold text-base">CONTACT US</p></li>
