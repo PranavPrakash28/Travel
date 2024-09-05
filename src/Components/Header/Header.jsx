@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Card from '../Cards/Card';
 // import discover from '../Image/discover.jpg';
 
 export default function Header() {
@@ -21,7 +22,7 @@ export default function Header() {
   }, []);
 
   return (
-    // style={{ backgroundImage: `url(${discover})` }}
+    <>
     <div className="bg-cover bg-center h-screen w-full" >
       <nav className={`sticky top-0 py-5 z-50 ${isScrolled ? 'bg-black opacity-50' : 'bg-transparent'}`}>
         <ul className="flex justify-around w-full text-white text-lg font-semibold">
@@ -35,6 +36,8 @@ export default function Header() {
         </ul>
       </nav>
     </div>
+    
+    </>
     
   );
 }

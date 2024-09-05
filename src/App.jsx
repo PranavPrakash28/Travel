@@ -1,6 +1,8 @@
+
+import Card from "./Components/Cards/Card"
 import Footer from "./Components/Footer/Footer"
-// import Header from "./Components/Header/Header"
 import Home from "./Pages/Home"
+
 
 
 function App() {
@@ -9,7 +11,7 @@ function App() {
   return (
     <>
     <Home/>
-    <Footer/>
+    <Footer/> 
     </>
   )
 }
