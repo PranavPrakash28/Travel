@@ -1,19 +1,17 @@
-
-import Card from "./Components/Cards/Card"
-import Footer from "./Components/Footer/Footer"
-import Home from "./Pages/Home"
-
-
+import Header from "./Components/Header/Header";
+import { Outlet } from "react-router-dom";
 
 function App() {
-
-
   return (
     <>
-    <Home/>
-    <Footer/> 
+    <Header />
+    <main>
+    <Outlet />
+    </main>
+  
+    
     </>
-  )
+  );
 }
 
-export default App
+export default App;
