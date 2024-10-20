@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from "react-helmet";
-import Domestic2 from '../Components/Image/Domestic2.jpg';
-import Domestic4 from '../Components/Image/Domestic4.jpg';
+// import Domestic2 from '../Components/Image/Domestic2.jpg';
+// import Domestic4 from '../Components/Image/Domestic4.jpg';
 import Footer from '../Components/Footer/Footer';
 import { Link } from 'react-router-dom';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Bali from '../Components/Image/Bali.webp';
+import Singapore from '../Components/Image/Singapore-04.jpg';
+// import Bali from '../Components/Image/Bali.webp';
 import Paris from '../Components/Image/Paris.jpg';
 import Tokyo from '../Components/Image/Tokyo.jpg';
 import Dubai from '../Components/Image/Dubai.jpg';
@@ -15,8 +16,17 @@ import Maldives from '../Components/Image/Maldives.jpg';
 import Switzerland from '../Components/Image/Switzerland.jpg';
 import Australia from '../Components/Image/Australia.jpg';
 import NewZealand from '../Components/Image/Newzealand.jpg';
-import Thailand from '../Components/Image/Thailand.jpg';
+// import Thailand from '../Components/Image/Thailand.jpg';
+import Vietnam from '../Components/Image/Vietnam.jpg';
 import Greece from '../Components/Image/Greece.jpg';
+import Armenia from '../Components/Image/Armenia.jpg';
+import Mauritius from '../Components/Image/Mauritius.jpg';
+import Georgia from '../Components/Image/Georgia.jpg';
+import Malaysia from '../Components/Image/Malaysia.jpg';
+import Azerbaijan from '../Components/Image/Azerbaijan.jpg';
+import SriLanka from '../Components/Image/SriLanka.jpg';
+import Seychelles from '../Components/Image/Seychelles.jpg';
+import Turkey from '../Components/Image/Turkey.jpg';
 
 const slides = [
   {
@@ -27,95 +37,95 @@ const slides = [
   }
 ];
 
-const BestDeals = [
-  {
-    img: Bali,
-    duration: '7 Days & 6 Nights',
-    text: 'Bali, Indonesia | Beaches and Culture',
-    price: 'INR 60000'
-  },
-  {
-    img: Paris, 
-    duration: '5 Days & 4 Nights',
-    text: 'Paris, France | Eiffel Tower and Museums',
-    price: 'INR 90000'
-  },
-  {
-    img: Tokyo, 
-    duration: '6 Days & 5 Nights',
-    text: 'Tokyo, Japan | Modern City and Tradition',
-    price: 'INR 80000'
-  },
-  {
-    img: Dubai,
-    duration: '5 Days & 4 Nights',
-    text: 'Dubai, UAE | Skyscrapers and Shopping',
-    price: 'INR 70000'
-  },
-  {
-    img: Maldives, 
-    duration: '7 Days & 6 Nights',
-    text: 'Maldives | Luxury Resorts and Coral Reefs',
-    price: 'INR 100000'
-  },
-  {
-    img: Switzerland, 
-    duration: '6 Days & 5 Nights',
-    text: 'Switzerland | Alps and Lakes',
-    price: 'INR 120000'
-  },
-  {
-    img: Australia, 
-    duration: '10 Days & 9 Nights',
-    text: 'Australia | Sydney and Great Barrier Reef',
-    price: 'INR 150000'
-  },
-  {
-    img: NewZealand, 
-    duration: '8 Days & 7 Nights',
-    text: 'New Zealand | Mountains and Adventure Sports',
-    price: 'INR 140000'
-  },
-  {
-    img: Thailand, 
-    duration: '5 Days & 4 Nights',
-    text: 'Thailand | Beaches and Nightlife',
-    price: 'INR 45000'
-  },
-  {
-    img: Greece, 
-    duration: '7 Days & 6 Nights',
-    text: 'Greece | Ancient History and Islands',
-    price: 'INR 110000'
-  }
-];
+// const BestDeals = [
+//   {
+//     img: Bali,
+//     duration: '7 Days & 6 Nights',
+//     text: 'Bali, Indonesia | Beaches and Culture',
+//     price: 'INR 60000'
+//   },
+//   {
+//     img: Paris, 
+//     duration: '5 Days & 4 Nights',
+//     text: 'Paris, France | Eiffel Tower and Museums',
+//     price: 'INR 90000'
+//   },
+//   {
+//     img: Tokyo, 
+//     duration: '6 Days & 5 Nights',
+//     text: 'Tokyo, Japan | Modern City and Tradition',
+//     price: 'INR 80000'
+//   },
+//   {
+//     img: Dubai,
+//     duration: '5 Days & 4 Nights',
+//     text: 'Dubai, UAE | Skyscrapers and Shopping',
+//     price: 'INR 70000'
+//   },
+//   {
+//     img: Maldives, 
+//     duration: '7 Days & 6 Nights',
+//     text: 'Maldives | Luxury Resorts and Coral Reefs',
+//     price: 'INR 100000'
+//   },
+//   {
+//     img: Switzerland, 
+//     duration: '6 Days & 5 Nights',
+//     text: 'Switzerland | Alps and Lakes',
+//     price: 'INR 120000'
+//   },
+//   {
+//     img: Australia, 
+//     duration: '10 Days & 9 Nights',
+//     text: 'Australia | Sydney and Great Barrier Reef',
+//     price: 'INR 150000'
+//   },
+//   {
+//     img: NewZealand, 
+//     duration: '8 Days & 7 Nights',
+//     text: 'New Zealand | Mountains and Adventure Sports',
+//     price: 'INR 140000'
+//   },
+//   {
+//     img: Thailand, 
+//     duration: '5 Days & 4 Nights',
+//     text: 'Thailand | Beaches and Nightlife',
+//     price: 'INR 45000'
+//   },
+//   {
+//     img: Greece, 
+//     duration: '7 Days & 6 Nights',
+//     text: 'Greece | Ancient History and Islands',
+//     price: 'INR 110000'
+//   }
+// ];
 
 
 // Custom Next Arrow
-const NextArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-gray-500 text-black rounded-full p-2 md:p-4"
-      onClick={onClick}
-    >
-      <i className="fas fa-chevron-right text-lg md:text-2xl"></i>
-    </div>
-  );
-};
+// const NextArrow = (props) => {
+//   const { onClick } = props;
+//   return (
+//     <div
+//       className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-gray-500 text-black rounded-full p-2 md:p-4"
+//       onClick={onClick}
+//     >
+//       <i className="fas fa-chevron-right text-lg md:text-2xl"></i>
+//     </div>
+//   );
+// };
 
-// Custom Prev Arrow
-const PrevArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-gray-500 text-white rounded-full p-2 md:p-4"
-      onClick={onClick}
-    >
-      <i className="fas fa-chevron-left text-lg md:text-2xl"></i>
-    </div>
-  );
-};
+// // Custom Prev Arrow
+// const PrevArrow = (props) => {
+//   const { onClick } = props;
+//   return (
+//     <div
+//       className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer bg-gray-500 text-white rounded-full p-2 md:p-4"
+//       onClick={onClick}
+//     >
+//       <i className="fas fa-chevron-left text-lg md:text-2xl"></i>
+//     </div>
+//   );
+// };
 
 function Domestic() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -132,35 +142,35 @@ function Domestic() {
     };
   }, []);
 
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3, 
-    slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    centerMode: true, 
-    centerPadding: '60px', 
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerPadding: '40px',
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: '20px',
-        },
-      },
-    ],
-  };
+  // const sliderSettings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 3, 
+  //   slidesToScroll: 1,
+  //   nextArrow: <NextArrow />,
+  //   prevArrow: <PrevArrow />,
+  //   centerMode: true, 
+  //   centerPadding: '60px', 
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //         centerPadding: '40px',
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         centerPadding: '20px',
+  //       },
+  //     },
+  //   ],
+  // };
   
   return (
     <>
@@ -202,9 +212,9 @@ function Domestic() {
       </div>
       {/* International section */}
       <div className='w-full h-auto flex justify-center px-4 md:px-0 font-oswald'>
-      <div className="max-w-7xl rounded-3xl mt-10 shadow-lg shadow-black p-8 md:py-10  text-black flex flex-col md:flex justify-between items-center gap-10">
+      <div className="max-w-7xl rounded-3xl mt-10  p-8 md:py-10  text-black flex flex-col md:flex justify-between items-center gap-10">
             <p className="text-xl md:text-5xl  font-bold md:text-start"
-            style={{ textShadow: '2px 2px 4px rgba(0.5, 0, 0.5, 0.5)' }}>Global Destinations: A World of Endless Exploration</p> 
+            style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0)' }}>Global Destinations: A World of Endless Exploration</p> 
             <p className="mt-2 text-md md:text-2xl pt-8 leading-6 md:leading-1">
             
              The world offers an incredible array of destinations, each with its own unique charm and experiences for travelers. From the stunning fjords of Norway to the bustling streets of Tokyo, international tourism presents a rich tapestry of cultures, landscapes, and adventures.
@@ -215,10 +225,10 @@ function Domestic() {
                 </span>
               )}
               <span
-                className="ml-2 cursor-pointer  text-lg underline" 
+                className="ml-2 cursor-pointer  text-lg text-red-600" 
                 onClick={() => setSeeMore(!seeMore)}
               >
-                {seeMore ? 'See Less' : 'See More'}
+                {seeMore ? 'read less' : 'read more'}
               </span>
             </p>
           </div>
@@ -258,246 +268,388 @@ function Domestic() {
      {/* Cards Section */}
     <div className='w-full md:max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-6 mb-10 '>
         {/* 1st card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Tokyo} alt="Tokyo" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Tokyo} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
               <p>TOKYO</p>
-              {/* <p>Trips</p> */}
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Loc_Tokyo"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Tokyo_Packages">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
          {/* 2nd card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Paris} alt="Paris" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
+         <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Paris} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
               <p>PARIS</p>
-              {/* <p>Trips</p> */}
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Loc_Paris"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Paris_Packages">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
         {/* 3rd card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Dubai} alt="Dubai" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Dubai} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
               <p>DUBAI</p>
-              {/* <p>Trips</p> */}
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Loc_Dubai"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Dubai_Packages">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
         {/* 4th card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Maldives} alt=" Maldives" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Maldives} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
               <p>MALDIVES</p>
-              {/* <p>Trips</p> */}
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Loc_Maldives"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Maldives_Packages">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
     </div>
     <div className='w-full md:max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-6 mb-10 '>
         {/* 5th card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Switzerland} alt="Switzerland" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Switzerland} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
               <p>SWITZERLAND</p>
-              {/* <p>Trips</p> */}
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Booking_Form"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
         {/* 6th card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Australia} alt="Australia" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Australia} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
               <p>AUSTRALIA</p>
-              {/* <p>Trips</p> */}
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Booking_Form"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
         {/* 7th card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={NewZealand} alt="NewZealand" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
-              <p>NEWZEALAND</p>
-              {/* <p>Trips</p> */}
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={NewZealand} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>NEW ZEALAND</p>
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Booking_Form"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
         {/* 8th card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Greece} alt="Greece" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Greece} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
               <p>GREECE</p>
-              {/* <p>Trips</p> */}
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Booking_Form"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
     </div>
 
     <div className='w-full md:max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-6 mb-10 '>
-        {/* 1st card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Tokyo} alt="Tokyo" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
-              <p>TOKYO</p>
-              {/* <p>Trips</p> */}
+        {/* 9th card */}
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Vietnam} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>VIETNAM</p>
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Loc_Tokyo"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
-         {/* 2nd card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Paris} alt="Paris" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
-              <p>PARIS</p>
-              {/* <p>Trips</p> */}
+         {/* 10th card */}
+         <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Malaysia} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>MALAYSIA</p>
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Loc_Paris"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
-        {/* 3rd card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Dubai} alt="Dubai" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
-              <p>DUBAI</p>
-              {/* <p>Trips</p> */}
+        {/* 11th card */}
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Georgia} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>GEORGIA</p>
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Loc_Dubai"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
-        {/* 4th card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Maldives} alt=" Maldives" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
+        {/* 12th card */}
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Maldives} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
               <p>MALDIVES</p>
-              {/* <p>Trips</p> */}
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Loc_Maldives"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
     </div>
     <div className='w-full md:max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-6 mb-10 '>
-        {/* 5th card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Switzerland} alt="Switzerland" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
-              <p>SWITZERLAND</p>
-              {/* <p>Trips</p> */}
+        {/* 13th card */}
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Seychelles} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>SEYCHELLES</p>
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Booking_Form"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
-        {/* 6th card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Australia} alt="Australia" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
-              <p>AUSTRALIA</p>
-              {/* <p>Trips</p> */}
+        {/* 14th card */}
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Mauritius} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>MAURITIUS</p>
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Booking_Form"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
-        {/* 7th card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={NewZealand} alt="NewZealand" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
-              <p>NEWZEALAND</p>
-              {/* <p>Trips</p> */}
+        {/* 15th card */}
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Turkey} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>TURKEY</p>
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Booking_Form"><button>READ MORE</button></Link>
-            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
 
-        {/* 8th card */}
-        <div className='w-full sm:w-64 lg:w-72 h-auto sm:h-80 lg:h-auto shadow-lg shadow-black border-black rounded-md font-oswald flex flex-col mx-auto justify-center items-center'>
-          <img src={Greece} alt="Greece" className='h-64 w-full sm:w-64 lg:w-72 rounded-t-md' />
-          <div className='p-4'>
-            <div className='flex justify-center gap-2 text-2xl font-bold text-blue-600'>
-              <p>GREECE</p>
-              {/* <p>Trips</p> */}
+        {/* 16th card */}
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Armenia} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>ARMENIA</p>
             </div>
-            <p className='text-center mt-2'>Creating unforgettable adventures, one group trip at a time.</p>
-            <div className='w-32 h-10 rounded-md mt-2 mb-2 text-white font-bold bg-blue-600 flex mx-auto justify-center items-center'>
-              <Link to="/Booking_Form"><button>READ MORE</button></Link>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
+          </div>
+        </div>
+    </div>
+    <div className='w-full md:max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-6 mb-10 '>
+        {/* 17th card */}
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Singapore} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>SINGAPORE</p>
             </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Singapore_Packages">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
+          </div>
+        </div>
+
+         {/* 18ht card */}
+         <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={Azerbaijan} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>AZERBAIJAN</p>
+            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
+          </div>
+        </div>
+         
+
+        {/* 19th card */}
+        <div className='relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden'>
+          <img src={SriLanka} alt="/" className='h-full w-full object-cover' />
+          <div className='absolute top-2 left-2 text-white'>
+            <div className='text-2xl font-normal'>
+              <p>SRI LANKA</p>
+            </div>
+          </div>
+          <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-light text-center text-white'>
+            <p className='mt-2 text-sm'>Creating unforgettable adventures, one group trip at a time.</p>
+          </div>
+          <div className='absolute bottom-0 left-0 m-2'>
+            <Link to="/Booking_Form">
+              <button className='w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center'>
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
     </div>

@@ -75,7 +75,7 @@ export default function Booking_Form() {
       <div className="flex items-center justify-center bg-cover bg-center min-h-screen font-oswald" style={{ backgroundImage: `url(${discover})` }}>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-full max-w-md  p-10 md:max-w-xl md:max-h-max mb-10 mt-36 bg-white shadow-md rounded opacity-90 overflow-auto "
+          className="w-full max-w-md  p-10 md:max-w-xl md:max-h-max mb-10 mt-36 bg-white  rounded overflow-auto shadow-2xl shadow-black rounded-2xl"
         >
           <h2 className="text-xl lg:text-3xl xl:text-4xl font-semibold mb-4 text-center">Fill Your Details</h2>
 

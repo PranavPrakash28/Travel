@@ -9,20 +9,20 @@ import Domestic from './Pages/Domestic.jsx';
 import International from './Pages/International.jsx';      
 import Contact from './Pages/Contact.jsx'; 
 import PolicyPrivacy from './Pages/PolicyPrivacy.jsx';
-import Loc_Bali from './Destinations/Loc_Bali.jsx'
-import Loc_Himachal from './Destinations/Loc_Himachal.jsx';
-import Loc_Jaipur from './Destinations/Loc_Jaipur.jsx';
-import Loc_Thailand from './Destinations/Loc_Thailand.jsx';
+import Loc_Bali from './Destinations/Bali_Packages.jsx';
+import Loc_Himachal from './Destinations/Himachal_Packages.jsx';
+import Loc_Jaipur from './Destinations/Jaipur_Packages.jsx';
+import Loc_Singapore from './Destinations/Singapore_Packages.jsx';
 import Booking_Form from './Components/Booking_Form/Booking_Form.jsx';
 import All_Cards from './Components/All_Cards/All_Cards.jsx';
-import Loc_Europe from './Destinations/Loc_Europe.jsx';
-import Loc_Agra from './Destinations/Loc_Agra.jsx';
-import Loc_Paris from './Destinations/Loc_Paris.jsx';
-import Loc_Kerala from './Destinations/Loc_Kerala.jsx';
-import Loc_Goa from './Destinations/Loc_Goa.jsx';
-import Loc_Tokyo from './Destinations/Loc_Tokyo.jsx';
-import Loc_Dubai from './Destinations/Loc_Dubai.jsx';
-import Loc_Maldives from './Destinations/Loc_Maldives.jsx';
+import Loc_Europe from './Destinations/Europe_Packages.jsx';
+import Loc_Agra from './Destinations/Agra_Packages.jsx';
+import Loc_Paris from './Destinations/Paris_Packages.jsx';
+import Loc_Kerala from './Destinations/Kerala_Packages.jsx';
+import Loc_Goa from './Destinations/Goa_Packages.jsx';
+import Loc_Tokyo from './Destinations/Tokyo_Packages.jsx';
+import Loc_Dubai from './Destinations/Dubai_Packages.jsx';
+import Loc_Maldives from './Destinations/Maldives_Packages.jsx';
 import Lost_User from './Components/Advertise/Lost_User.jsx';
 
 
@@ -53,19 +53,19 @@ const router = createBrowserRouter([
         element: <Contact /> 
       },  
       {
-        path: 'Loc_Bali',   
-        element: <Loc_Bali />
+        path: 'Bali_Packages',   
+        element: <Loc_Bali/>
       },
       {
-        path: 'Loc_Himachal',   
+        path: 'Himachal_Packages',   
         element: <Loc_Himachal />
       },
       {
-        path: 'Loc_Thailand',   
-        element: <Loc_Thailand />
+        path: 'Singapore_Packages',   
+        element: <Loc_Singapore />
       },
       {
-        path: 'Loc_Europe',   
+        path: 'Europe_Packages',   
         element: <Loc_Europe />
       },
       {
@@ -85,35 +85,35 @@ const router = createBrowserRouter([
         element:<Home/>
       },
       {
-        path:'Loc_Jaipur',
+        path:'Jaipur_Packages',
         element:<Loc_Jaipur/>
       },
       {
-        path:'Loc_Tokyo',
+        path:'Tokyo_Packages',
         element:<Loc_Tokyo/>
       },
       {
-        path:'Loc_Kerala',
+        path:'Kerala_Packages',
         element:<Loc_Kerala/>
       },
       {
-        path:'Loc_Goa',
+        path:'Goa_Packages',
         element:<Loc_Goa/>
       },
       {
-        path:'Loc_Agra',
+        path:'Agra_Packages',
         element:<Loc_Agra/>
       },
       {
-        path:'Loc_Paris',
+        path:'Paris_Packages',
         element:<Loc_Paris/>
       },
       {
-        path:'Loc_Dubai',
+        path:'Dubai_Packages',
         element:<Loc_Dubai/>
       },
       {
-        path:'Loc_Maldives',
+        path:'Maldives_Packages',
         element:<Loc_Maldives/>
       },
       {

@@ -15,7 +15,7 @@ function Footer() {
               </div>
             </li>
             <li className="max-w-xs text-center md:text-justify mb-2 md:mb-0"> 
-              <p className="text-xs lg:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p> 
+              <p className="text-xs lg:text-sm">V</p> 
             </li>
             <li className="text-center md:text-right">
               <FontAwesomeIcon icon={faCircleChevronDown} className="text-2xl lg:text-3xl cursor-pointer hover:text-gray-400" />
@@ -33,12 +33,14 @@ function Footer() {
               <FontAwesomeIcon icon={faPhone} className="mr-2 text-lg" />
               <p className="font-bold text-md lg:text-lg">PHONE NUMBER</p>
             </li>
-            <li><p className="text-xs lg:text-sm">56425458455</p></li>
+            <li><p className="text-xs lg:text-sm">+91-
+
+</p></li>
             <li className="flex items-center justify-center md:justify-start">
               <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-lg" />
               <p className="font-bold text-md lg:text-lg">E-MAIL</p>
             </li>
-            <li><p className="text-xs lg:text-sm">travel@gmail.com</p></li>
+            <li><p className="text-xs lg:text-sm">travel@travel.com</p></li>
           </ul>
         </nav>
 
@@ -62,13 +64,13 @@ function Footer() {
               <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-lg" />
               <p className="font-bold text-md lg:text-lg">ADDRESS</p>
             </li> 
-            <li><p className="text-xs lg:text-sm">4215 Brendaway, Amsterdam, Norway</p></li>
-            <li><p className="text-xs lg:text-sm">Address line two</p></li>
+            <li><p className="text-xs lg:text-sm">B, Dharamshala,</p></li>
+            <li><p className="text-xs lg:text-sm">Distt. Kangra, Himachal Pradesh - 176215</p></li>
             <li className="flex items-center justify-center md:justify-start">
               <FontAwesomeIcon icon={faGlobe} className="mr-2 text-lg" />
               <p className="font-bold text-md lg:text-lg">WEBSITE</p>
             </li>
-            <li><p className="text-xs lg:text-sm">www.travelwebsite.com</p></li>
+            <li><p className="text-xs lg:text-sm">www.xyz.com</p></li>
           </ul>
         </nav>
       </div>

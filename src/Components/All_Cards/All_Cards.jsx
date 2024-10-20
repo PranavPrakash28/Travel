@@ -54,7 +54,7 @@ function All_Cards() {
                   Lorem ipsum dolor sit amet, consectetur
                 </p>
                 <div className="mt-auto flex justify-center">
-                  <Link to="/Loc_Europe">
+                  <Link to="/Europe_Packages">
                     <button className="px-4 py-2 bg-blue-600 font-oswald text-white font-bold border-none">
                       Read More
                     </button>

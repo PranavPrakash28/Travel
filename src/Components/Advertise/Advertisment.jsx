@@ -14,9 +14,9 @@ function Advertisment() {
             <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 text-3xl" />
           </div>
           <div className="mt-2 text-center">
-            <p className="text-lg font-semibold">Text One</p>
-            <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p className="text-sm text-gray-600">Sed do eiusmod tempor incididunt ut labore.</p>
+            <p className="text-lg font-semibold">Great Deals</p>
+            <p className="text-sm text-gray-600">Thanks to our strong partnerships, we offer unbeatable prices on flights, hotels, and packages.Get the best value for your money and make your dream trip affordable and amazing.</p>
+            <p className="text-sm text-gray-600"></p>
           </div>
         </div>
 
@@ -26,9 +26,9 @@ function Advertisment() {
             <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 text-3xl" />
           </div>
           <div className="mt-2 text-center">
-            <p className="text-lg font-semibold">Text Two</p>
-            <p className="text-sm text-gray-600">Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p className="text-sm text-gray-600">Duis aute irure dolor in reprehenderit in voluptate.</p>
+            <p className="text-lg font-semibold">One Stop Shop</p>
+            <p className="text-sm text-gray-600">We handle all your travel needs! From choosing the best flights and hotels to transportation and excursions, we’ve got you covered.Sit back, relax, and let us take care of everything.</p>
+            <p className="text-sm text-gray-600"></p>
           </div>
         </div>
 
@@ -38,9 +38,9 @@ function Advertisment() {
             <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 text-3xl" />
           </div>
           <div className="mt-2 text-center">
-            <p className="text-lg font-semibold">Text Three</p>
-            <p className="text-sm text-gray-600">Excepteur sint occaecat cupidatat non proident.</p>
-            <p className="text-sm text-gray-600">Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className="text-lg font-semibold">24x7 Support</p>
+            <p className="text-sm text-gray-600">Worried about communication issues? Our friendly customer support team is available around the clock. If plans change or issues arise, we’re here to help anytime, anywhere.</p>
+            <p className="text-sm text-gray-600"></p>
           </div>
         </div>
 
@@ -50,9 +50,9 @@ function Advertisment() {
             <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 text-3xl" />
           </div>
           <div className="mt-2 text-center">
-            <p className="text-lg font-semibold">Text Four</p>
-            <p className="text-sm text-gray-600">Curabitur pretium tincidunt lacus. Nulla gravida orci.</p>
-            <p className="text-sm text-gray-600">Aenean placerat. Integer vitae libero ac risus egestas placerat.</p>
+            <p className="text-lg font-semibold">Safety First</p>
+            <p className="text-sm text-gray-600">Your safety is our top priority. We provide comprehensive travel insurance options and keep you well informed about the latest travel advisories and health guidelines...</p>
+            <p className="text-sm text-gray-600"></p>
           </div>
         </div>
 

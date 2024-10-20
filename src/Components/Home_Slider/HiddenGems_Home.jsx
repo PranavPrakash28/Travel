@@ -67,6 +67,63 @@ const DealsSlider = () => {
       </Helmet>
       <div className="max-w-7xl mx-auto py-10 px-4 font-oswald">
         <Link to= '/Loc_Himachal'><p className="text-3xl font-bold mb-7">HIMANCHAL HIDDEN GEMS</p></Link>
+        <p className="mt-2 text-md md:text-lg pt-8 leading-6 md:leading-1 mb-7 ">
+        <span className="text-xl  md:text-3xl font-semibold ">Hidden gems in Himachal Pradesh, perfect for travelers seeking offbeat experiences:</span><br/>
+
+                  Tirthan Valley | Serene Valleys and Trout Fishing<br/>
+                  Nestled in the Kullu district, Tirthan Valley is a tranquil paradise offering breathtaking landscapes and an escape from the bustling city life. Known for its pristine river flowing through lush green valleys, it’s a perfect spot for trout fishing and nature walks. Explore the Great Himalayan National Park or take a serene walk through the charming villages to soak in the beauty of this untouched gem. 
+                  {seeMore && (
+                  <span>           
+                  <br/>
+                  Spiti Valley | Remote Deserts and Monasteries<br/>
+                  For those seeking adventure, Spiti Valley offers one of the most isolated yet captivating experiences in Himachal Pradesh. With its high-altitude desert landscape, centuries-old monasteries, and starry night skies, Spiti is ideal for trekkers and spiritual seekers alike. Visit ancient monasteries like Key and Dhankar, or explore the serene Chandratal Lake. Book your trip now and avail special offers for this mystical valley that promises a blend of adventure and tranquility.
+
+                  <br/>
+                  Chitkul | India’s Last Village and Scenic Beauty<br/>
+                  Chitkul, the last inhabited village near the Indo-Tibet border, is a quaint destination surrounded by snow-clad mountains, gurgling rivers, and a unique cultural experience. This hidden gem offers a peaceful environment with mesmerizing views, perfect for those looking for solitude and a connection with nature. Wander through apple orchards, trek to nearby Kinnaur, and experience the rustic charm of this remote village. Contact us today to get special packages for exploring Chitkul’s serene beauty.
+
+                  <br/>
+                  Shoja | Tranquil Villages and Meadows<br/>
+                  A picturesque village located in the Seraj Valley, Shoja is a perfect retreat for those in search of peace and tranquility. Surrounded by thick forests and rolling meadows, this hidden gem offers breathtaking views of the snow-clad mountains and lush greenery. Visit Jalori Pass for stunning views, and hike to the nearby Serolsar Lake for an unforgettable experience. Secure your booking now to explore this hidden haven and enjoy discounted rates!
+
+                  <br/>
+                  Barot Valley | Fishing, Trekking, and Nature Retreat<br/>
+                  A lesser-known treasure in Himachal, Barot Valley offers an ideal blend of adventure and serenity. Whether it’s fishing in the Uhl River, trekking through dense forests, or camping under the stars, Barot has something for every nature lover. The valley’s unspoiled beauty and tranquil ambiance make it a favorite among those looking for an offbeat travel experience. Don&apos;t miss our exclusive deals—book now to immerse yourself in Barot&apos;s natural charm.
+
+                  <br/>
+                  Jibhi | Hidden Paradise and Waterfalls<br/>
+                  Jibhi, a small hamlet in Himachal Pradesh, is known for its lush green surroundings, wooden houses, and hidden waterfalls. It’s a perfect destination for nature lovers and peace seekers, offering an escape from the typical touristy spots. Take a walk through the forested trails, discover hidden waterfalls, and unwind in this serene environment. Plan your next trip with us and get discounts on your booking for Jibhi, your next hidden gem escape.
+
+                  <br/>
+                  Kalpa | Apple Orchards and Views of Kinnaur Kailash<br/>
+                  Kalpa, located in the Kinnaur district, is a serene village offering stunning views of the Kinnaur Kailash range. Famous for its apple orchards, Kalpa is an ideal destination for those seeking peace, quiet, and unparalleled views of snow-covered peaks. Wander through quaint villages, visit the local monasteries, and enjoy the fresh mountain air. Avail our special offers by booking today and experience Kalpa’s natural beauty.
+
+                  <br/>
+                  Parvati Valley | Enchanting Valleys and Spiritual Vibes<br/>
+                  Parvati Valley is famous for its enchanting landscape, spiritual retreats, and vibrant local culture. Home to destinations like Kasol and Manikaran, this valley is a haven for nature lovers and spiritual seekers. Whether you want to trek to Kheerganga or relax by the Parvati River, this hidden gem is full of experiences waiting to be explored. Contact us now for the best deals on your Parvati Valley adventure.
+
+                  <br/>
+                  Narkanda | Snow-Capped Peaks and Apple Orchards<br/>
+                  Located at an altitude of 2708 meters, Narkanda offers panoramic views of the snow-clad peaks of the Himalayas and lush apple orchards. It’s a perfect destination for winter sports enthusiasts, with options for skiing and snowboarding. During the warmer months, it’s an ideal spot for hiking and relaxing in nature’s lap. Book now for an adventurous trip to Narkanda and enjoy special offers.
+
+                  <br/>
+                  Bir Billing | Paragliding Capital and Monasteries<br/>
+                  Bir Billing is known as the paragliding capital of India, attracting adventure seekers from all over the world. Aside from thrilling paragliding experiences, Bir is also home to several Tibetan monasteries, offering a peaceful retreat amidst the mountains. Soar through the skies, enjoy breathtaking views, and visit the local monasteries to experience both adventure and serenity. Reach out to us for exclusive deals on Bir Billing trips!
+
+                  <br/>
+                  Check Out Our <Link to='/international' className="text-red-600 hover:cursor-pointer hover:underline">International</Link> Hidden Gems
+                  Don’t stop with domestic travel! Check our other pages for International Hidden Gems and Other Destinations that will inspire your next adventure abroad. We specialize in crafting unforgettable travel experiences, both  <Link to='/domestic' className="text-red-600 hover:cursor-pointer hover:underline">locally</Link> and  <Link to='/international' className="text-red-600 hover:cursor-pointer hover:underline">internationally</Link>. <br/>
+                  <Link to='/contact' className="hover:underline text-red-600 hover:cursor-pointer">Contact Us</Link> & <Link to='/Booking_Form'className="hover:underline text-red-600 hover:cursor-pointer">Book Now</Link> for an Instant Discount
+                  Choose our website for your next trip! Contact us today to plan your dream getaway, and don’t forget to Book Now to avail exclusive discounts on flights, hotels, and tour packages. Let us make your journey hassle-free and unforgettable!              
+                </span>
+              )}
+              <span
+                className="ml-2 cursor-pointer text-red-600 text-lg underline" 
+                onClick={() => setSeeMore(!seeMore)}
+              >
+                {seeMore ? 'read less' : 'read more'}
+              </span>
+        </p>
         <Slider {...settings}>
           {Himachal_Hidden_Gems.map((deal, index) => (
             <div key={index} className="px-2">
@@ -94,56 +151,55 @@ const DealsSlider = () => {
             </div>
           ))}
         </Slider>
-        <div className="md:max-w-7xl md:mx-auto shadow-lg shadow-black mt-10 p-4 rounded-lg font-oswald">
+        {/* <div className="md:max-w-7xl md:mx-auto shadow-lg shadow-black mt-10 p-4 rounded-lg font-oswald">
         <p className="mt-2 text-md md:text-lg pt-8 leading-6 md:leading-1">
         <span className="text-xl text-bold">Hidden gems in Himachal Pradesh, perfect for travelers seeking offbeat experiences:</span><br/>
 
-Tirthan Valley | Serene Valleys and Trout Fishing<br/>
-Nestled in the Kullu district, Tirthan Valley is a tranquil paradise offering breathtaking landscapes and an escape from the bustling city life. Known for its pristine river flowing through lush green valleys, it’s a perfect spot for trout fishing and nature walks. Explore the Great Himalayan National Park or take a serene walk through the charming villages to soak in the beauty of this untouched gem. 
-              {seeMore && (
-                <span>           
-<br/>
-Spiti Valley | Remote Deserts and Monasteries<br/>
-For those seeking adventure, Spiti Valley offers one of the most isolated yet captivating experiences in Himachal Pradesh. With its high-altitude desert landscape, centuries-old monasteries, and starry night skies, Spiti is ideal for trekkers and spiritual seekers alike. Visit ancient monasteries like Key and Dhankar, or explore the serene Chandratal Lake. Book your trip now and avail special offers for this mystical valley that promises a blend of adventure and tranquility.
+                  Tirthan Valley | Serene Valleys and Trout Fishing<br/>
+                  Nestled in the Kullu district, Tirthan Valley is a tranquil paradise offering breathtaking landscapes and an escape from the bustling city life. Known for its pristine river flowing through lush green valleys, it’s a perfect spot for trout fishing and nature walks. Explore the Great Himalayan National Park or take a serene walk through the charming villages to soak in the beauty of this untouched gem. 
+                  {seeMore && (
+                  <span>           
+                  <br/>
+                  Spiti Valley | Remote Deserts and Monasteries<br/>
+                  For those seeking adventure, Spiti Valley offers one of the most isolated yet captivating experiences in Himachal Pradesh. With its high-altitude desert landscape, centuries-old monasteries, and starry night skies, Spiti is ideal for trekkers and spiritual seekers alike. Visit ancient monasteries like Key and Dhankar, or explore the serene Chandratal Lake. Book your trip now and avail special offers for this mystical valley that promises a blend of adventure and tranquility.
 
-<br/>
-Chitkul | India’s Last Village and Scenic Beauty<br/>
-Chitkul, the last inhabited village near the Indo-Tibet border, is a quaint destination surrounded by snow-clad mountains, gurgling rivers, and a unique cultural experience. This hidden gem offers a peaceful environment with mesmerizing views, perfect for those looking for solitude and a connection with nature. Wander through apple orchards, trek to nearby Kinnaur, and experience the rustic charm of this remote village. Contact us today to get special packages for exploring Chitkul’s serene beauty.
+                  <br/>
+                  Chitkul | India’s Last Village and Scenic Beauty<br/>
+                  Chitkul, the last inhabited village near the Indo-Tibet border, is a quaint destination surrounded by snow-clad mountains, gurgling rivers, and a unique cultural experience. This hidden gem offers a peaceful environment with mesmerizing views, perfect for those looking for solitude and a connection with nature. Wander through apple orchards, trek to nearby Kinnaur, and experience the rustic charm of this remote village. Contact us today to get special packages for exploring Chitkul’s serene beauty.
 
-<br/>
-Shoja | Tranquil Villages and Meadows<br/>
-A picturesque village located in the Seraj Valley, Shoja is a perfect retreat for those in search of peace and tranquility. Surrounded by thick forests and rolling meadows, this hidden gem offers breathtaking views of the snow-clad mountains and lush greenery. Visit Jalori Pass for stunning views, and hike to the nearby Serolsar Lake for an unforgettable experience. Secure your booking now to explore this hidden haven and enjoy discounted rates!
+                  <br/>
+                  Shoja | Tranquil Villages and Meadows<br/>
+                  A picturesque village located in the Seraj Valley, Shoja is a perfect retreat for those in search of peace and tranquility. Surrounded by thick forests and rolling meadows, this hidden gem offers breathtaking views of the snow-clad mountains and lush greenery. Visit Jalori Pass for stunning views, and hike to the nearby Serolsar Lake for an unforgettable experience. Secure your booking now to explore this hidden haven and enjoy discounted rates!
 
-<br/>
-Barot Valley | Fishing, Trekking, and Nature Retreat<br/>
-A lesser-known treasure in Himachal, Barot Valley offers an ideal blend of adventure and serenity. Whether it’s fishing in the Uhl River, trekking through dense forests, or camping under the stars, Barot has something for every nature lover. The valley’s unspoiled beauty and tranquil ambiance make it a favorite among those looking for an offbeat travel experience. Don't miss our exclusive deals—book now to immerse yourself in Barot's natural charm.
+                  <br/>
+                  Barot Valley | Fishing, Trekking, and Nature Retreat<br/>
+                  A lesser-known treasure in Himachal, Barot Valley offers an ideal blend of adventure and serenity. Whether it’s fishing in the Uhl River, trekking through dense forests, or camping under the stars, Barot has something for every nature lover. The valley’s unspoiled beauty and tranquil ambiance make it a favorite among those looking for an offbeat travel experience. Don't miss our exclusive deals—book now to immerse yourself in Barot's natural charm.
 
-<br/>
-Jibhi | Hidden Paradise and Waterfalls<br/>
-Jibhi, a small hamlet in Himachal Pradesh, is known for its lush green surroundings, wooden houses, and hidden waterfalls. It’s a perfect destination for nature lovers and peace seekers, offering an escape from the typical touristy spots. Take a walk through the forested trails, discover hidden waterfalls, and unwind in this serene environment. Plan your next trip with us and get discounts on your booking for Jibhi, your next hidden gem escape.
+                  <br/>
+                  Jibhi | Hidden Paradise and Waterfalls<br/>
+                  Jibhi, a small hamlet in Himachal Pradesh, is known for its lush green surroundings, wooden houses, and hidden waterfalls. It’s a perfect destination for nature lovers and peace seekers, offering an escape from the typical touristy spots. Take a walk through the forested trails, discover hidden waterfalls, and unwind in this serene environment. Plan your next trip with us and get discounts on your booking for Jibhi, your next hidden gem escape.
 
-<br/>
-Kalpa | Apple Orchards and Views of Kinnaur Kailash<br/>
-Kalpa, located in the Kinnaur district, is a serene village offering stunning views of the Kinnaur Kailash range. Famous for its apple orchards, Kalpa is an ideal destination for those seeking peace, quiet, and unparalleled views of snow-covered peaks. Wander through quaint villages, visit the local monasteries, and enjoy the fresh mountain air. Avail our special offers by booking today and experience Kalpa’s natural beauty.
+                  <br/>
+                  Kalpa | Apple Orchards and Views of Kinnaur Kailash<br/>
+                  Kalpa, located in the Kinnaur district, is a serene village offering stunning views of the Kinnaur Kailash range. Famous for its apple orchards, Kalpa is an ideal destination for those seeking peace, quiet, and unparalleled views of snow-covered peaks. Wander through quaint villages, visit the local monasteries, and enjoy the fresh mountain air. Avail our special offers by booking today and experience Kalpa’s natural beauty.
 
-<br/>
-Parvati Valley | Enchanting Valleys and Spiritual Vibes<br/>
-Parvati Valley is famous for its enchanting landscape, spiritual retreats, and vibrant local culture. Home to destinations like Kasol and Manikaran, this valley is a haven for nature lovers and spiritual seekers. Whether you want to trek to Kheerganga or relax by the Parvati River, this hidden gem is full of experiences waiting to be explored. Contact us now for the best deals on your Parvati Valley adventure.
+                  <br/>
+                  Parvati Valley | Enchanting Valleys and Spiritual Vibes<br/>
+                  Parvati Valley is famous for its enchanting landscape, spiritual retreats, and vibrant local culture. Home to destinations like Kasol and Manikaran, this valley is a haven for nature lovers and spiritual seekers. Whether you want to trek to Kheerganga or relax by the Parvati River, this hidden gem is full of experiences waiting to be explored. Contact us now for the best deals on your Parvati Valley adventure.
 
-<br/>
-Narkanda | Snow-Capped Peaks and Apple Orchards<br/>
-Located at an altitude of 2708 meters, Narkanda offers panoramic views of the snow-clad peaks of the Himalayas and lush apple orchards. It’s a perfect destination for winter sports enthusiasts, with options for skiing and snowboarding. During the warmer months, it’s an ideal spot for hiking and relaxing in nature’s lap. Book now for an adventurous trip to Narkanda and enjoy special offers.
+                  <br/>
+                  Narkanda | Snow-Capped Peaks and Apple Orchards<br/>
+                  Located at an altitude of 2708 meters, Narkanda offers panoramic views of the snow-clad peaks of the Himalayas and lush apple orchards. It’s a perfect destination for winter sports enthusiasts, with options for skiing and snowboarding. During the warmer months, it’s an ideal spot for hiking and relaxing in nature’s lap. Book now for an adventurous trip to Narkanda and enjoy special offers.
 
-<br/>
-Bir Billing | Paragliding Capital and Monasteries<br/>
-Bir Billing is known as the paragliding capital of India, attracting adventure seekers from all over the world. Aside from thrilling paragliding experiences, Bir is also home to several Tibetan monasteries, offering a peaceful retreat amidst the mountains. Soar through the skies, enjoy breathtaking views, and visit the local monasteries to experience both adventure and serenity. Reach out to us for exclusive deals on Bir Billing trips!
+                  <br/>
+                  Bir Billing | Paragliding Capital and Monasteries<br/>
+                  Bir Billing is known as the paragliding capital of India, attracting adventure seekers from all over the world. Aside from thrilling paragliding experiences, Bir is also home to several Tibetan monasteries, offering a peaceful retreat amidst the mountains. Soar through the skies, enjoy breathtaking views, and visit the local monasteries to experience both adventure and serenity. Reach out to us for exclusive deals on Bir Billing trips!
 
-<br/>
-Check Out Our <Link to='/international' className="text-red-600 hover:cursor-pointer hover:underline">International</Link> Hidden Gems
+                  <br/>
+                  Check Out Our <Link to='/international' className="text-red-600 hover:cursor-pointer hover:underline">International</Link> Hidden Gems
                   Don’t stop with domestic travel! Check our other pages for International Hidden Gems and Other Destinations that will inspire your next adventure abroad. We specialize in crafting unforgettable travel experiences, both  <Link to='/domestic' className="text-red-600 hover:cursor-pointer hover:underline">locally</Link> and  <Link to='/international' className="text-red-600 hover:cursor-pointer hover:underline">internationally</Link>. <br/>
                   <Link to='/contact' className="hover:underline text-red-600 hover:cursor-pointer">Contact Us</Link> & <Link to='/Booking_Form'className="hover:underline text-red-600 hover:cursor-pointer">Book Now</Link> for an Instant Discount
-                  Choose our website for your next trip! Contact us today to plan your dream getaway, and don’t forget to Book Now to avail exclusive discounts on flights, hotels, and tour packages. Let us make your journey hassle-free and unforgettable! 
-                  
+                  Choose our website for your next trip! Contact us today to plan your dream getaway, and don’t forget to Book Now to avail exclusive discounts on flights, hotels, and tour packages. Let us make your journey hassle-free and unforgettable!              
                 </span>
               )}
               <span
@@ -152,9 +208,9 @@ Check Out Our <Link to='/international' className="text-red-600 hover:cursor-poi
               >
                 {seeMore ? 'See Less' : 'See More'}
               </span>
-            </p>
+        </p>
 
-        </div>
+        </div> */}
       </div>
     </>
   );
