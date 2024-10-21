@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const nodemailer = require('nodemailer'); 
+// const nodemailer = require('nodemailer'); 
 require('dotenv').config(); // To load environment variables from .env file
 
 const app = express();
@@ -45,42 +45,42 @@ const Booking = mongoose.model('Booking', bookingSchema);
 // });
 
 
-let transporter = nodemailer.createTransport({
-  host: 'smtp.ethereal.email',
-  port: 587,
-  auth: {
-      user: 'river.hermiston4@ethereal.email',
-      pass: 'vMtWWZmQHyKsN6rTET'
-  }
-});
+// let transporter = nodemailer.createTransport({
+//   host: 'smtp.ethereal.email',
+//   port: 587,
+//   auth: {
+//       user: 'river.hermiston4@ethereal.email',
+//       pass: 'vMtWWZmQHyKsN6rTET'
+//   }
+// });
 
 // Email sending function
-const sendMail = async (bookingData) => {
-  try {
-    const mailOptions = {
-      from: bookingData.email, // Sender address
-      to:  process.env.EMAIL_USER, // Fixed recipient email (change this to your recipient email)
-      subject: 'New Booking Submission',
-      text: `New booking received!
-      Greeting Admin,
-      Here are the booking details:
-      Name: ${bookingData.name}
-      Email: ${bookingData.email}
-      Mobile: ${bookingData.mobile}
-      Holiday Type: ${bookingData.holidayType}
-      Destination: ${bookingData.destination}
-      Privacy Policy: ${bookingData.privacyPolicy ? 'Accepted' : 'Not Accepted'}
+// const sendMail = async (bookingData) => {
+//   try {
+//     const mailOptions = {
+//       from: bookingData.email, // Sender address
+//       to:  process.env.EMAIL_USER, // Fixed recipient email (change this to your recipient email)
+//       subject: 'New Booking Submission',
+//       text: `New booking received!
+//       Greeting Admin,
+//       Here are the booking details:
+//       Name: ${bookingData.name}
+//       Email: ${bookingData.email}
+//       Mobile: ${bookingData.mobile}
+//       Holiday Type: ${bookingData.holidayType}
+//       Destination: ${bookingData.destination}
+//       Privacy Policy: ${bookingData.privacyPolicy ? 'Accepted' : 'Not Accepted'}
       
-      Please check and follow up with the customer.`,
-    };
+//       Please check and follow up with the customer.`,
+//     };
 
-    // Send the email
-    await transporter.sendMail(mailOptions);
-    console.log('Booking details sent to admin successfully!');
-  } catch (error) {
-    console.error('Error sending email:', error);
-  }
-};       
+//     // Send the email
+//     await transporter.sendMail(mailOptions);
+//     console.log('Booking details sent to admin successfully!');
+//   } catch (error) {
+//     console.error('Error sending email:', error);
+//   }
+// };       
 
 // API Endpoint to Handle Form Submission
 app.post('/submit-booking', async (req, res) => {

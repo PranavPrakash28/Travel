@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com'; // Import EmailJS
 import discover from '../Image/discover.jpg';
 import Footer from '../Footer/Footer';
 import Privacy from '../Privacypopup/Privacy';
@@ -19,6 +20,7 @@ export default function Booking_Form() {
   const [captcha, setCaptcha] = useState(generateCaptcha());
   const [captchaInput, setCaptchaInput] = useState('');
   const [captchaError, setCaptchaError] = useState('');
+  const [showPrivacy, setShowPrivacy] = useState(false);
 
   const onSubmit = async (data) => {
     if (captchaInput !== captcha) {
@@ -30,22 +32,27 @@ export default function Booking_Form() {
     setCaptchaInput('');
 
     try {
-      const response = await fetch('http://localhost:5000/submit-booking', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      // Send the form data via EmailJS
+      const emailResponse = await emailjs.send(
+        'service_s3kmzy8',    // Replace with your EmailJS service ID
+        'template_fyr73e8',   // Replace with your EmailJS template ID
+        {
+          name: data.name,
+          email: data.email,
+          mobile: data.mobile,
+          holidayType: data.holidayType,
+          numberOfPeople: data.numberOfPeople,
+          budget: data.budget,
+          numberOfDays: data.numberOfDays,
+          destination: data.destination,
         },
-        body: JSON.stringify(data),
-      });
+        'H6gRwzolMSSe7YkZz'     // Replace with your EmailJS public key
+      );
 
-      const result = await response.json();
-
-      if (response.ok) {
-        console.log('Success:', result);
-        alert('Form submitted successfully!');
+      if (emailResponse.status === 200) {
+        alert('Form submitted successfully! Email sent.');
       } else {
-        console.log('Error:', result);
-        alert('Failed to submit the form.');
+        alert('Failed to submit the form. Please try again.');
       }
     } catch (error) {
       console.error('Error submitting the form:', error);
@@ -63,15 +70,14 @@ export default function Booking_Form() {
     setCaptchaInput(e.target.value);
   };
 
-  const [showPrivacy, setShowPrivacy] = useState(false);
-
   return (
     <>
-    <Helmet>
-                <meta charSet="utf-8" />
-                <title>Booking Form</title>
-                <link rel="canonical" href="http://mysite.com/example" />
-            </Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Booking Form</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
+
       <div className="flex items-center justify-center bg-cover bg-center min-h-screen font-oswald" style={{ backgroundImage: `url(${discover})` }}>
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -117,6 +123,7 @@ export default function Booking_Form() {
             />
             {errors.mobile && <p className="text-red-500 text-xs lg:text-sm xl:text-base mt-1">{errors.mobile.message}</p>}
           </div>
+
           {/* Holiday Type */}
           <div className="mb-6">
             <label htmlFor="holidayType" className="block text-sm lg:text-lg xl:text-xl font-medium text-gray-700">Holiday Type</label>
@@ -132,6 +139,8 @@ export default function Booking_Form() {
             </select>
             {errors.holidayType && <p className="text-red-500 text-xs lg:text-sm xl:text-base mt-1">{errors.holidayType.message}</p>}
           </div>
+
+          {/* Number of People */}
           <div className="mb-6">
             <label htmlFor="numberOfPeople" className="block text-sm lg:text-lg xl:text-xl font-medium text-gray-700">Number of People</label>
             <input
@@ -185,6 +194,7 @@ export default function Booking_Form() {
             </select>
             {errors.destination && <p className="text-red-500 text-xs lg:text-sm xl:text-base mt-1">{errors.destination.message}</p>}
           </div>
+
           {/* Privacy Policy */}
           <div className="mb-6 flex items-center">
             <input
@@ -199,6 +209,8 @@ export default function Booking_Form() {
             </label>
             {errors.privacyPolicy && <p className="text-red-500 text-xs lg:text-sm xl:text-base mt-1">{errors.privacyPolicy.message}</p>}
           </div>
+
+          {/* Additional Form Fields... */}
 
           {/* CAPTCHA */}
           <div className="mb-6">
@@ -222,6 +234,7 @@ export default function Booking_Form() {
           </button>
         </form>
       </div>
+
       <Footer />
     </>
   );
