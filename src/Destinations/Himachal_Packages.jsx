@@ -14,7 +14,7 @@ import Banjar from '../Components/Image/Banjar.png';
 import Shimla from '../Components/Image/Shimla.jpg';
 import Mandi from '../Components/Image/Mandi.jpg';
 import Lahaul from '../Components/Image/Lahaul.jpg';
-import Zanskar from '../Components/Image/zanskar.jpg';
+import Zanskar from '../Components/Image/Zanskar.jpg';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const FAQItem = ({ question, answer }) => {
