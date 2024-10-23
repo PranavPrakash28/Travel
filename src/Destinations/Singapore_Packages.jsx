@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBowlFood, faPassport, faPlane, faBed, faCamera, faUser, faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Singapore from '../Components/Image/singapore.jpg';
 import Singapore01 from '../Components/Image/Singapore.jpg';
 import Singapore02 from '../Components/Image/Singapore-02.jpg';
 import Singapore03 from '../Components/Image/Singapore-03.jpg';
@@ -65,7 +64,7 @@ const FAQItem = ({ question, answer }) => {
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
       <div className="w-full font-oswald">
-        <div className="w-full h-80 md:h-[300px] bg-cover bg-center" style={{ backgroundImage: `url(${Singapore})` }}>
+        <div className="w-full h-80 md:h-[300px] bg-cover bg-center" style={{ backgroundImage: `url(${Singapore01})` }}>
           {/* image */}
         </div>
 
