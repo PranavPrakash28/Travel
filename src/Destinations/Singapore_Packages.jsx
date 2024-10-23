@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBowlFood, faPassport, faPlane, faBed, faCamera, faUser, faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Thailand from '../Components/Image/singapore.jpg';
+import Singapore from '../Components/Image/singapore.jpg';
 import Singapore01 from '../Components/Image/Singapore.jpg';
 import Singapore02 from '../Components/Image/Singapore-02.jpg';
 import Singapore03 from '../Components/Image/Singapore-03.jpg';
@@ -65,7 +65,7 @@ const FAQItem = ({ question, answer }) => {
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
       <div className="w-full font-oswald">
-        <div className="w-full h-80 md:h-[300px] bg-cover bg-center" style={{ backgroundImage: `url(${Thailand})` }}>
+        <div className="w-full h-80 md:h-[300px] bg-cover bg-center" style={{ backgroundImage: `url(${Singapore})` }}>
           {/* image */}
         </div>
 
@@ -118,7 +118,7 @@ const FAQItem = ({ question, answer }) => {
         {/* PACKAGE 1 */}
         <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
           <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-            <img src={Singapore01} className="w-full h-full object-cover" alt="Thailand" />
+            <img src={Singapore01} className="w-full h-full object-cover" alt="Singapore" />
           </div>
 
           <div className="ml-6 md:ml-8">
@@ -181,7 +181,7 @@ const FAQItem = ({ question, answer }) => {
         {/* PACKAGE 2 */}
         <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
           <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-            <img src={Singapore02} className="w-full h-full object-cover" alt="Thailand" />
+            <img src={Singapore02} className="w-full h-full object-cover" alt="Singapore" />
           </div>
 
           <div className="ml-6 md:ml-8">
@@ -244,7 +244,7 @@ const FAQItem = ({ question, answer }) => {
         {/* PACKAGE 3 */}
         <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
           <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-            <img src={Singapore03} className="w-full h-full object-cover" alt="Thailand" />
+            <img src={Singapore03} className="w-full h-full object-cover" alt="Singapore" />
           </div>
 
           <div className="ml-6 md:ml-8">
@@ -309,7 +309,7 @@ const FAQItem = ({ question, answer }) => {
         {/* PACKAGE 4 */}
         <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
           <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-            <img src={Singapore04} className="w-full h-full object-cover" alt="Thailand" />
+            <img src={Singapore04} className="w-full h-full object-cover" alt="Singapore" />
           </div>
 
           <div className="ml-6 md:ml-8">
@@ -373,7 +373,7 @@ const FAQItem = ({ question, answer }) => {
         {/* PACKAGE 5 */}
         <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
           <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-            <img src={Singapore05} className="w-full h-full object-cover" alt="Thailand" />
+            <img src={Singapore05} className="w-full h-full object-cover" alt="Singapore" />
           </div>
 
           <div className="ml-6 md:ml-8">
@@ -437,7 +437,7 @@ const FAQItem = ({ question, answer }) => {
         {/* PACKAGE 6 */}
         <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
           <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-            <img src={Singapore06} className="w-full h-full object-cover" alt="Thailand" />
+            <img src={Singapore06} className="w-full h-full object-cover" alt="Singapore" />
           </div>
 
           <div className="ml-6 md:ml-8">
@@ -502,7 +502,7 @@ const FAQItem = ({ question, answer }) => {
         {/* PACKAGE 7 */}
         <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
           <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-            <img src={Singapore07} className="w-full h-full object-cover" alt="Thailand" />
+            <img src={Singapore07} className="w-full h-full object-cover" alt="Singapore" />
           </div>
 
           <div className="ml-6 md:ml-8">
