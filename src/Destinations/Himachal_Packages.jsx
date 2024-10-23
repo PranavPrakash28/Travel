@@ -1,18 +1,16 @@
 /* eslint-disable react/prop-types */
 import Footer from '../Components/Footer/Footer';
-// import discover from '../Components/Image/discover.jpg';
 import Himachal from '../Components/Image/about7.jpg';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import { Helmet } from "react-helmet";
-// import Sikkim from '../Components/Image/Sikkim.jpg';
 import Bharmour from '../Components/Image/Bharmour.webp';
 import Manali from '../Components/Image/Manali.jpg';
 import Kangra from '../Components/Image/Kangra.jpg';
 import Chamba from '../Components/Image/Chamba.jpg';
-import Banjar from '../Components/Image/Churah-valley.png';
+import Banjar from '../Components/Image/Banjar.png';
 import Shimla from '../Components/Image/Shimla.jpg';
 import Mandi from '../Components/Image/Mandi.jpg';
 import Lahaul from '../Components/Image/Lahaul.jpg';
