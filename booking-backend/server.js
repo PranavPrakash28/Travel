@@ -83,24 +83,24 @@ const Booking = mongoose.model('Booking', bookingSchema);
 // };       
 
 // API Endpoint to Handle Form Submission
-app.post('/submit-booking', async (req, res) => {
-  console.log("Inside the post method");
-  try {
-    const formData = req.body;
-    console.log('Received form data:', formData);
+// app.post('/submit-booking', async (req, res) => {
+//   console.log("Inside the post method");
+//   try {
+//     const formData = req.body;
+//     console.log('Received form data:', formData);
     
-    const newBooking = new Booking(formData);
-    await newBooking.save();
+//     const newBooking = new Booking(formData);
+//     await newBooking.save();
 
-    // Send email with booking details
-    await sendMail(formData);
+//     // Send email with booking details
+//     await sendMail(formData);
 
-    res.json({ message: 'Booking form submitted successfully!', data: formData });
-  } catch (error) {
-    console.error('Error submitting the form:', error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
-});
+//     res.json({ message: 'Booking form submitted successfully!', data: formData });
+//   } catch (error) {
+//     console.error('Error submitting the form:', error);
+//     res.status(500).json({ error: 'Internal server error' });
+//   }
+// });
 
 // Start the Server
 const PORT = process.env.PORT || 5000;
