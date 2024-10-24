@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 function Popup({ onClose }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  const [mobile, setMobile] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13,7 +13,7 @@ function Popup({ onClose }) {
     const templateParams = {
       name: name,
       email: email,
-      phone: phone,
+      mobile: mobile,
     };
 
     try {
@@ -25,7 +25,7 @@ function Popup({ onClose }) {
       );
 
       console.log('Email sent successfully!', result.text);
-      onClose(); // Close popup on success
+      onClose(); 
     } catch (error) {
       console.error('Error sending email:', error);
     }
@@ -81,16 +81,16 @@ function Popup({ onClose }) {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="phone" className="block text-sm lg:text-base font-medium text-gray-700">
-              Phone Number
+            <label htmlFor="mobile" className="block text-sm lg:text-base font-medium text-gray-700">
+              Mobile Number
             </label>
             <input
-              id="phone"
+              id="mobile"
               type="tel"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+              value={mobile}
+              onChange={(e) => setMobile(e.target.value)}
               className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm lg:text-base p-2"
-              placeholder="Enter your phone number"
+              placeholder="Enter your mobile number"
               required
             />
           </div>
