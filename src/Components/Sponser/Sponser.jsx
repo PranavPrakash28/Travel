@@ -1,4 +1,4 @@
-import Slider from 'react-slick';
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import logo1 from "../Image/logo1.jpg";
@@ -24,50 +24,84 @@ function Sponser() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   return (
     <div className="max-w-7xl mx-auto py-6 border-t-4 border-black px-4">
-      <p className="text-3xl font-bold mb-6 text-center">WE ARE RECOGNISED BY</p>
+      <h1 className="text-3xl font-bold mb-6 text-center">
+        WE ARE RECOGNISED BY
+      </h1>
       <Slider {...settings}>
         <div className="p-4">
-          <img src={logo1} alt="Logo 1" className="w-full h-24 object-contain mx-auto" />
+          <img
+            src={logo1}
+            alt="Logo 1"
+            className="w-full h-24 object-contain mx-auto"
+          />
         </div>
         <div className="p-4">
-          <img src={logo2} alt="Logo 2" className="w-full h-24 object-contain mx-auto" />
+          <img
+            src={logo2}
+            alt="Logo 2"
+            className="w-full h-24 object-contain mx-auto"
+          />
         </div>
         <div className="p-4">
-          <img src={logo3} alt="Logo 3" className="w-full h-24 object-contain mx-auto" />
+          <img
+            src={logo3}
+            alt="Logo 3"
+            className="w-full h-24 object-contain mx-auto"
+          />
         </div>
         <div className="p-4">
-          <img src={logo4} alt="Logo 4" className="w-full h-24 object-contain mx-auto" />
+          <img
+            src={logo4}
+            alt="Logo 4"
+            className="w-full h-24 object-contain mx-auto"
+          />
         </div>
         <div className="p-4">
-          <img src={logo5} alt="Logo 5" className="w-full h-24 object-contain mx-auto" />
+          <img
+            src={logo5}
+            alt="Logo 5"
+            className="w-full h-24 object-contain mx-auto"
+          />
         </div>
         <div className="p-4">
-          <img src={logo6} alt="Logo 6" className="w-full h-24 object-contain mx-auto" />
+          <img
+            src={logo6}
+            alt="Logo 6"
+            className="w-full h-24 object-contain mx-auto"
+          />
         </div>
         <div className="p-4">
-          <img src={logo7} alt="Logo 7" className="w-full h-24 object-contain mx-auto" />
+          <img
+            src={logo7}
+            alt="Logo 7"
+            className="w-full h-24 object-contain mx-auto"
+          />
         </div>
         <div className="p-4">
-          <img src={logo8} alt="Logo 8" className="w-full h-24 object-contain mx-auto" />
+          <img
+            src={logo8}
+            alt="Logo 8"
+            className="w-full h-24 object-contain mx-auto"
+          />
         </div>
       </Slider>
     </div>
