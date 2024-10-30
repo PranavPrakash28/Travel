@@ -1294,7 +1294,7 @@ const Destination = () => {
               Frequently Asked Questions (FAQs)
             </h2>
             <div className="flex flex-col md:flex-row md:w-full md:gap-10 ">
-              <div className="w-full md:w-1/2 text-2xl pr-2">
+              <div className="w-full md:w-1/2  pr-2">
                 <FAQItem
                   question="What is the best time to visit Singapore?"
                   answer="The best time to visit Singapore is during the dry season, from April to October. This is when the weather is most pleasant, making it ideal for outdoor activities and beach trips."

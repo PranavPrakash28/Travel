@@ -43,7 +43,7 @@ function Card() {
 
       {/* Card for Singapore */}
       <Link to="/Singapore_Packages">
-        <div className="relative -translate-y-10 bg-white border-t-blue-600 border-t-8 shadow-2xl overflow-hidden transform transition-transform duration-500 ease-in-out hover:-translate-y-28 hover:z-20 w-72 h-[30rem] md:w-[18rem] md:h-[30rem] flex flex-col">
+        <div className="relative md:-translate-y-10 bg-white border-t-blue-600 border-t-8 shadow-2xl overflow-hidden transform transition-transform duration-500 ease-in-out md:hover:-translate-y-28 hover:-translate-y-10 hover:z-20 w-72 h-[30rem] md:w-[18rem] md:h-[30rem] flex flex-col">
           <img
             src={Singapore01}
             alt="Thailand"
