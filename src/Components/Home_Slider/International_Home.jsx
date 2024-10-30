@@ -92,12 +92,12 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
+  slidesToShow: 5,
   slidesToScroll: 1,
   centerMode: true,
   centerPadding: "0",
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1500,
   responsive: [
     {
       breakpoint: 1024,
@@ -113,7 +113,6 @@ const settings = {
     },
   ],
 };
-
 const DealsSlider = () => {
   const [seeMore, setSeeMore] = useState(false);
   return (
@@ -128,8 +127,8 @@ const DealsSlider = () => {
           {" "}
           <h1 className="text-3xl font-bold ">INTERNATIONAL</h1>
         </Link>
-        <h1 className="mt-2 text-md md:text-lg pt-8 leading-6 md:leading-1 mb-7 ">
-          <span className="text-xl md:text-3xl  font-semibold ">
+        <h1 className="mt-2 text-md md:text-xl pt-8 leading-6 md:leading-1 mb-7 ">
+          <span className="text-md md:text-2xl  font-semibold ">
             {" "}
             Discover the World’s Most Incredible{" "}
             <Link
@@ -404,12 +403,12 @@ const DealsSlider = () => {
                     </h1>
                   </div>
                   <div className="absolute bottom-4 left-4">
-                    <h2 className="text-white">{deal.duration}</h2>
+                    <h2 className="text-white text-sm">{deal.duration}</h2>
                     {/* <p className="text-white font-bold">{deal.price}</p> */}
                   </div>
                   <div className="absolute bottom-4 right-4">
-                    <Link to={deal.Link}>
-                      <button className="text-white border-2 border-white rounded-lg px-4 py-2">
+                    <Link to={deal.link}>
+                      <button className="text-white border-2 text-sm border-white rounded-lg px-2 py-1 hover:bg-white hover:text-black">
                         EXPLORE NOW
                       </button>
                     </Link>

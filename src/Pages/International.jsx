@@ -179,7 +179,7 @@ function Domestic() {
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
 
-      <div className="relative w-full h-[300px] md:h-[400px]">
+      <div className="relative w-full h-[300px] md:h-[500px]">
         <img
           src={slides[currentSlide].img}
           alt="/"
@@ -210,9 +210,9 @@ function Domestic() {
       </div>
       {/* International section */}
       <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald">
-        <div className="max-w-7xl rounded-3xl mt-10  p-8 md:py-10  text-black flex flex-col md:flex justify-between items-center gap-10">
+        <div className="max-w-7xl rounded-3xl  text-black flex flex-col md:flex justify-between items-center gap-10">
           <h1
-            className="text-xl md:text-5xl  font-bold md:text-start"
+            className="text-xl md:text-5xl pt-5 font-bold md:text-start"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0)" }}
           >
             Global Destinations: A World of Endless Exploration
@@ -283,7 +283,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Tokyo} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>TOKYO</h1>
               </div>
             </div>
@@ -294,7 +294,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Tokyo_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -305,7 +305,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Paris} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>PARIS</h1>
               </div>
             </div>
@@ -316,7 +316,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Paris_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -327,7 +327,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Dubai} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>DUBAI</h1>
               </div>
             </div>
@@ -338,7 +338,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Dubai_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -353,7 +353,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>MALDIVES</h1>
               </div>
             </div>
@@ -364,7 +364,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Maldives_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -380,7 +380,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>SWITZERLAND</h1>
               </div>
             </div>
@@ -391,7 +391,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -406,7 +406,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>AUSTRALIA</h1>
               </div>
             </div>
@@ -417,7 +417,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -432,7 +432,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>NEW ZEALAND</h1>
               </div>
             </div>
@@ -443,7 +443,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -454,7 +454,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Greece} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>GREECE</h1>
               </div>
             </div>
@@ -465,7 +465,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -478,7 +478,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Vietnam} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>VIETNAM</h1>
               </div>
             </div>
@@ -489,7 +489,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -504,7 +504,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>MALAYSIA</h1>
               </div>
             </div>
@@ -515,7 +515,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -526,7 +526,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Georgia} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>GEORGIA</h1>
               </div>
             </div>
@@ -537,7 +537,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -552,7 +552,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>MALDIVES</h1>
               </div>
             </div>
@@ -563,7 +563,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -579,7 +579,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>SEYCHELLES</h1>
               </div>
             </div>
@@ -590,7 +590,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -605,7 +605,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>MAURITIUS</h1>
               </div>
             </div>
@@ -616,7 +616,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -627,7 +627,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Turkey} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>TURKEY</h1>
               </div>
             </div>
@@ -638,7 +638,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -649,7 +649,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Armenia} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>ARMENIA</h1>
               </div>
             </div>
@@ -660,7 +660,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -676,7 +676,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>SINGAPORE</h1>
               </div>
             </div>
@@ -687,7 +687,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Singapore_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -702,7 +702,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>AZERBAIJAN</h1>
               </div>
             </div>
@@ -713,7 +713,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -728,7 +728,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>SRI LANKA</h1>
               </div>
             </div>
@@ -739,7 +739,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>

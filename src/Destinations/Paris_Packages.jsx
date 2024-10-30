@@ -84,7 +84,7 @@ const Destination = () => {
               >
                 Paris: A Timeless Blend of Elegance and Innovation
               </p>
-              <p className="mt-2 text-md md:text-2xl pt-8 leading-6 md:leading-1">
+              <p className="mt-2 text-md md:text-xl pt-8 leading-6 md:leading-1">
                 Paris, the City of Light, is a place where timeless elegance and
                 cutting-edge modernity come together, offering an unparalleled
                 experience for travelers. Renowned for its world-class art,

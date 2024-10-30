@@ -93,12 +93,12 @@ const settings = {
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
+  slidesToShow: 5,
   slidesToScroll: 1,
   centerMode: true,
   centerPadding: "0",
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1500,
   responsive: [
     {
       breakpoint: 1024,
@@ -128,8 +128,8 @@ const DealsSlider = () => {
         <Link to="/domestic">
           <h1 className="font-bold text-3xl">DOMESTIC</h1>
         </Link>
-        <h1 className="mt-2 text-md md:text-lg pt-8 leading-6 mb-7 md:leading-1 ">
-          <span className="md:text-3xl text-xl font-semibold">
+        <h1 className="mt-2 text-md md:text-xl pt-8 leading-6 mb-7 md:leading-1 ">
+          <span className="md:text-2xl text-lg font-semibold">
             {" "}
             Discover India&apos;s Incredible{" "}
             <Link
@@ -146,18 +146,8 @@ const DealsSlider = () => {
           adventure, or cultural immersion, India&apos;s domestic travel scene
           has it all. Let&apos;s dive into some of the most spectacular
           destinations you must explore:
-          {/* Uttarakhand<br/>
-                  Nestled in the Himalayas, Uttarakhand is a spiritual and nature lover's paradise. Home to the famous Char Dham Yatra (Badrinath, Kedarnath, Gangotri, and Yamunotri), this state offers spiritual renewal in its sacred temples and a close encounter with raw natural beauty. Don&apos;t miss the adventure capital Rishikesh, known for river rafting and yoga, and Mussoorie, the "Queen of Hills," offering enchanting views of the Himalayas.<br/>
-                  Himachal Pradesh<br/>
-                  From the valleys of Kullu and Manali to the serene, spiritual retreat of Dharamshala, Himachal is an ideal mix of adventure and tranquility. Explore the isolated charm of the Spiti Valley, known for its rugged terrain and Buddhist monasteries, or experience the beauty of Shimla, a colonial hill station full of charm. Trekking, paragliding, and skiing are popular activities here for adventure seekers.<br/>
-                  Andaman & Nicobar Islands<br/>
-                  If pristine beaches and crystal-clear waters are what you're after, the Andaman Islands are the perfect escape. Visit Radhanagar Beach, one of the best in Asia, or indulge in water sports like snorkeling and scuba diving in Havelock Island. The rich marine life and untouched coral reefs make it a must-visit for nature lovers.<br/>
-                  Kerala<br/>
-                  Kerala, aptly named "God's Own Country," is known for its serene backwaters, lush tea gardens, and vibrant culture. Take a houseboat ride in Alleppey, relax on the beaches of Kovalam, or experience the wildlife of Thekkady. Kerala&apos;s lush hills in Munnar offer an aromatic journey through tea plantations, making it a scenic retreat.<br/> */}
           {seeMore && (
             <span>
-              {/* Discover India&apos;s Incredible Domestic Travel Destinations<br/>
-                  India is a country of breathtaking contrasts, where every corner offers a new experience. Whether you&apos;re craving serenity, adventure, or cultural immersion, India&apos;s domestic travel scene has it all. Let&apos;s dive into some of the most spectacular destinations you must explore:<br/> */}
               <br />
               Uttarakhand
               <br />
@@ -380,12 +370,12 @@ const DealsSlider = () => {
                     </h1>
                   </div>
                   <div className="absolute bottom-4 left-4">
-                    <h2 className="text-white">{deal.duration}</h2>
+                    <h2 className="text-white text-sm">{deal.duration}</h2>
                     {/* <p className="text-white font-bold">{deal.price}</p> */}
                   </div>
                   <div className="absolute bottom-4 right-4">
                     <Link to={deal.link}>
-                      <button className="text-white border-2 border-white rounded-lg px-4 py-2">
+                      <button className="text-white border-2 text-sm border-white rounded-lg px-2 py-1 hover:bg-white hover:text-black">
                         EXPLORE NOW
                       </button>
                     </Link>

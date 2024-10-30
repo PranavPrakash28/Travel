@@ -169,7 +169,7 @@ function Domestic() {
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       {/* Hero Section */}
-      <div className="relative w-full h-[300px] md:h-[400px]">
+      <div className="relative w-full h-[300px] md:h-[500px]">
         <img
           src={slides[currentSlide].img}
           alt="/"
@@ -178,32 +178,12 @@ function Domestic() {
       </div>
 
       {/* Vibrant Bharat Section */}
-      <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald">
-        {/* <div className="max-w-7xl rounded-3xl mt-10 shadow-xl border-2 p-8 md:py-10 bg-red-800 text-white flex flex-col md:flex-row justify-between items-center gap-10">
-          <div className="flex flex-col text-yellow-300 font-bold text-4xl md:text-6xl">
-            <h1 style={{ textShadow: '2px 2px 4px rgba(1, 0, 0.5, 2)' }}>&quot;VIBRANT</h1>
-            <h1 style={{ textShadow: '2px 2px 4px rgba(1, 0, 0.5, 2)' }}>BHARAT&quot;</h1>
-          </div>
-          <div className="flex flex-col text-center  md:text-left">
-            <h1 className="text-xl md:text-4xl flex   ">
-              Discover India&#39;s rich heritage and stunning landscapes on a journey like no other.
-            </h1>
-            <Link to="/Booking_Form">
-              <button
-                className="text-lg md:text-2xl font-bold mt-8 md:mt-5 text-yellow-300 rounded-lg  py-2 px-4"
-                style={{ textShadow: '2px 2px 4px rgba(1, 0, 0.5, 2)' }}
-              >
-                BOOK NOW
-              </button>
-            </Link>
-          </div>
-        </div> */}
-      </div>
+      <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald"></div>
       {/* India section */}
       <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald">
-        <div className="max-w-7xl rounded-3xl mt-10 p-8 md:py-10  text-black flex flex-col md:flex justify-between items-center gap-10">
+        <div className="max-w-7xl rounded-3xl   text-black flex flex-col md:flex justify-between items-center gap-10">
           <h1
-            className="text-xl md:text-5xl  font-bold md:text-start"
+            className="text-xl md:text-5xl pt-5 font-bold md:text-start"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0)" }}
           >
             India: A Land of Timeless Wonders
@@ -272,7 +252,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Jaipur} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl  font-normal">
+              <div className="text-2xl  font-normal hover:text-black">
                 <h1>JAIPUR</h1>
               </div>
             </div>
@@ -283,7 +263,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Jaipur_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex  justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex  justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -294,7 +274,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Kerala} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>KERALA</h1>
               </div>
             </div>
@@ -305,7 +285,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Kerala_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -316,7 +296,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Goa} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>GOA</h1>
               </div>
             </div>
@@ -327,7 +307,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Goa_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -338,7 +318,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Agra} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>AGRA</h1>
               </div>
             </div>
@@ -349,7 +329,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Agra_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -361,7 +341,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Ladakh} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>LADAKH</h1>
               </div>
             </div>
@@ -372,7 +352,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -387,7 +367,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>VARANASI</h1>
               </div>
             </div>
@@ -398,7 +378,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -413,7 +393,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>RANTHAMBORE</h1>
               </div>
             </div>
@@ -424,7 +404,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -435,7 +415,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Mysore} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>MYSORE</h1>
               </div>
             </div>
@@ -446,7 +426,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -459,7 +439,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Jaipur} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl  font-normal">
+              <div className="text-2xl  font-normal hover:text-black">
                 <h1>JAIPUR</h1>
               </div>
             </div>
@@ -470,7 +450,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Jaipur_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex  justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex  justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -481,7 +461,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Kerala} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>KERALA</h1>
               </div>
             </div>
@@ -492,7 +472,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Kerala_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -503,7 +483,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Goa} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>GOA</h1>
               </div>
             </div>
@@ -514,7 +494,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Goa_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -525,7 +505,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Agra} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>AGRA</h1>
               </div>
             </div>
@@ -536,7 +516,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Agra_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -548,7 +528,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Ladakh} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal  hover:text-black">
                 <h1>LADAKH</h1>
               </div>
             </div>
@@ -559,7 +539,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -574,7 +554,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal   hover:text-black">
                 <h1>VARANASI</h1>
               </div>
             </div>
@@ -585,7 +565,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -600,7 +580,7 @@ function Domestic() {
               className="h-full w-full object-cover"
             />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>RANTHAMBORE</h1>
               </div>
             </div>
@@ -611,7 +591,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -622,7 +602,7 @@ function Domestic() {
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Mysore} alt="/" className="h-full w-full object-cover" />
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl font-normal">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>MYSORE</h1>
               </div>
             </div>
@@ -633,7 +613,7 @@ function Domestic() {
             </div>
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Booking_Form">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>

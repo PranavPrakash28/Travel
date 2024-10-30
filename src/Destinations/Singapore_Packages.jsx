@@ -9,7 +9,7 @@ import {
   faChevronDown,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Singapore01 from "../Components/Image/Singapore.jpg";
 
@@ -42,29 +42,29 @@ const FAQItem = ({ question, answer }) => {
 
 const Destination = () => {
   const [seeMore, setSeeMore] = useState(false);
-  const [isHiddenSectionVisible, setIsHiddenSectionVisible] = useState(false);
-  const [expandedContent, setExpandedContent] = useState(null);
+  // const [isHiddenSectionVisible, setIsHiddenSectionVisible] = useState(false);
+  // const [expandedContent, setExpandedContent] = useState(null);
 
-  const handleAboutClick = (content) => {
-    setIsHiddenSectionVisible(true);
-    setExpandedContent(expandedContent === content ? null : content);
-    setSeeMore(true);
-    scrollToDiv();
-  };
+  // const handleAboutClick = (content) => {
+  //   setIsHiddenSectionVisible(true);
+  //   setExpandedContent(expandedContent === content ? null : content);
+  //   setSeeMore(true);
+  //   scrollToDiv();
+  // };
 
-  const targetDivRef = useRef(null);
+  // const targetDivRef = useRef(null);
 
-  const scrollToDiv = () => {
-    if (targetDivRef.current) {
-      targetDivRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const scrollToDiv = () => {
+  //   if (targetDivRef.current) {
+  //     targetDivRef.current.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
-  useEffect(() => {
-    if (isHiddenSectionVisible) {
-      scrollToDiv();
-    }
-  }, [isHiddenSectionVisible]);
+  // useEffect(() => {
+  //   if (isHiddenSectionVisible) {
+  //     scrollToDiv();
+  //   }
+  // }, [isHiddenSectionVisible]);
 
   return (
     <>
@@ -81,15 +81,15 @@ const Destination = () => {
           {/* image */}
         </div>
 
-        <div className="flex flex-col md:flex-row  rounded-2xl  mt-10 md:max-w-7xl mx-auto px-4 text-md md:h-96">
-          <div className="md:w-3/4 p-5 border-r-2 border-gray-600 md:h-auto">
+        <div className="flex flex-col md:flex-row  rounded-2xl  mt-10 md:max-w-7xl mx-auto px-4 text-md md:h-auto">
+          <div className="md:w-full  p-5  md:h-auto">
             <p
               className="text-xl md:text-4xl font-bold"
               style={{ textShadow: "2px 2px 4px rgba (0,0,0,0)" }}
             >
               Singapore
             </p>
-            <p className="mt-2 text-md md:text-2xl pt-8 leading-6 md:leading-1">
+            <p className="mt-2 text-md md:text-xl pt-8 leading-6 md:leading-1">
               Though small in size, Singapore packs a punch with its vibrant
               culture, stunning skyline, and a wide variety of activities that
               cater to every type of traveller. A true melting pot, this island
@@ -102,7 +102,209 @@ const Destination = () => {
                   Be it the stunning vibrant nightlife, thrilling adventure
                   activities, or the mouth-watering delicacies, Singapore will
                   definitely leave you craving for more! Visiting Singapore
-                  isn't just a vacation, it's an experience of a lifetime.
+                  isn’t just a vacation, it’s an experience of a lifetime.
+                  <br />
+                  About Singapore
+                  <br />
+                  The Extravagant Food Scene of Singapore: Must Visit
+                  Restaurants:
+                  <br />
+                  <p>
+                    Every nook and cranny of Singapore offers a luxurious
+                    experience for your palate. From high-end gourmet
+                    restaurants to local street food, you’ll find it all
+                    OH-SO-CHIC! For an authentic Singaporean meal, visit Lau Pa
+                    Sat, a bustling hawker centre offering everything from
+                    Hainanese chicken rice to satay skewers and laksa. If your’e
+                    in the mood for seafood, Singapore’s signature dish, chilli
+                    crab, is a must-try. Head to Jumbo Seafood or Long Beach
+                    Seafood for the best version of this spicy, sweet, and
+                    savoury delight.
+                  </p>
+                  <p>
+                    For those seeking a refined dining experience, Odette, a
+                    Michelin-starred French restaurant, is the pinnacle of
+                    sophistication. Or, you can savour innovative dishes at
+                    Burnt Ends, where modern barbecue meets Singaporean flair.
+                  </p>
+                  <br />
+                  GSK World Travels: Wide Range of Packages for Every Traveller:
+                  <br />
+                  <p>
+                    Your journey begins with GSK World Travels, which offers a
+                    wide range of all-inclusive packages tailored to your needs.
+                    Whether you’re a family looking to create memorable moments,
+                    a group of friends seeking adventure, or a couple on a
+                    romantic honeymoon, GSK World Travels has the perfect
+                    holiday package for you.
+                  </p>
+                  <p>
+                    For families, Singapore offers exciting options like Sentosa
+                    Island, home to Universal Studios Singapore, the interactive
+                    S.E.A. Aquarium, and the fun-filled Adventure Cove
+                    Waterpark. With GSK’s family-friendly packages, all these
+                    and more can be seamlessly woven into your itinerary.
+                  </p>
+                  <p>
+                    If you’re an adventure-loving bachelor or part of a group,
+                    you’ll love the adrenaline-pumping activities like indoor
+                    skydiving at iFly, the thrilling AJ Hackett Sentosa Bungy
+                    Jump, or jet-skiing across the Singapore waters. Those
+                    seeking romance can opt for a sunset cruise along Marina Bay
+                    or a candlelit dinner at one of the city’s rooftop
+                    restaurants.
+                  </p>
+                  <p>
+                    With GSK World Travels, you can expect hassle-free planning
+                    with carefully designed packages that cover accommodations,
+                    meals, and guided tours. Whether it’s luxury or budget
+                    travel, GSK ensures every detail is taken care of so you can
+                    focus on enjoying Singapore.
+                  </p>
+                  <br />
+                  Singapore’s Thriving Nightlife:
+                  <br />
+                  <p>
+                    When the sun sets, Singapore howls into a playground for
+                    night owls. From rooftop bars with panoramic city views to
+                    bustling night markets and pulsating nightclubs, the
+                    nightlife here is second to none. Clarke Quay is the heart
+                    of the action, where you can dance the night away at spots
+                    like Zouk or sip cocktails at the iconic CÉ LA VI atop the
+                    Marina Bay Sands.
+                  </p>
+                  <p>
+                    For those who prefer a more laid-back evening filled with
+                    lighthearted walks, night markets like Chinatown Street
+                    Market offer a blend of shopping, food, and culture under
+                    twinkling lights. If you’re looking for something unique, do
+                    not miss out on a night safari at the Singapore Zoo, where
+                    you can see nocturnal animals in their natural habitat.
+                  </p>
+                  <br />
+                  Endless Possibilities of the Things to Do in Singapore:
+                  <br />
+                  <p>
+                    Singapore offers a wide variety of activities that are
+                    enjoyed by all types of travellers. Begin your journey at
+                    Marina Bay Sands, one of Singapore’s most iconic structures,
+                    where you can enjoy panoramic views from the SkyPark
+                    Observation Deck or take a dip in the world-famous infinity
+                    pool.
+                  </p>
+                  <p>
+                    Explore the futuristic gardens at Gardens by the Bay, with
+                    its towering Supertree Grove, indoor waterfalls, and
+                    biodomes filled with exotic plants from around the globe. At
+                    night, the Supertrees come alive with a stunning light show,
+                    creating an unforgettable visual experience.
+                  </p>
+                  <p>
+                    For history and culture buffs, Chinatown and Little India
+                    offer a glimpse into Singapore’s diverse heritage. Both
+                    neighbourhoods are brimming with temples, bustling markets,
+                    and delicious street food. In Chinatown, visit the Buddha
+                    Tooth Relic Temple, a grand structure housing one of the
+                    Buddha’s teeth.
+                  </p>
+                  <p>
+                    Families can explore the world-renowned Singapore Zoo and
+                    its famous Night Safari, where nocturnal animals roam in
+                    naturalistic habitats. The Jurong Bird Park and River
+                    Wonders also offer family-friendly, wildlife-themed
+                    adventures.
+                  </p>
+                  <br />
+                  Adventure Activities: #StrictlytheThrillSeekersZone:
+                  <br />
+                  <p>
+                    A trip without the chills and thrills is way too elegant to
+                    be true right? Well you’re in for a treat! Singapore has no
+                    shortage of these adrenaline-pumping activities. Sentosa
+                    Island is a go-to destination for thrill-seekers, offering
+                    activities like zip-lining at Mega Adventure Park and the
+                    heart-stopping Bungy Jump at AJ Hackett Sentosa.{" "}
+                  </p>
+                  <p>
+                    Water sports enthusiasts can enjoy the splashes while
+                    jet-skiing, wakeboarding, and kayaking at Singapore’s
+                    beaches. The island’s coastline is a bedrock for water-based
+                    activities that will quench your thirst for adventure.
+                  </p>
+                  <br />
+                  Foods to Try : A little something for your Tastebuds to Devour
+                  year:
+                  <br />
+                  <p>
+                    Singapore’s culinary offerings are as diverse as its people.
+                    From the humble hawker centers to award-winning fine dining,
+                    there’s something for everyone. Don’t miss iconic
+                    Singaporean dishes like Hainanese chicken rice, a simple yet
+                    flavorful meal beloved by locals and tourists alike. Another
+                    must-try is laksa, a spicy noodle soup that’s bursting with
+                    coconut and seafood flavours.
+                  </p>
+                  <p>
+                    For dessert, cool off with ice kachang, a mountain of shaved
+                    ice topped with sweet syrups, or dive into the rich and
+                    creamy kaya toast, a breakfast staple served with
+                    soft-boiled eggs. If you’re a seafood lover, make sure to
+                    sample Singapore’s famous chilli crab and black pepper crab.
+                  </p>
+                  <br />
+                  Things to Know About Singapore: Practical Tips:
+                  <br />
+                  <p>
+                    Before you set off on your Singaporean adventure, there are
+                    a few essential things to know. First, the local currency is
+                    the Singapore dollar (SGD), so make sure to exchange your
+                    money ahead of time or withdraw from ATMs available across
+                    the city. Singapore’s weather is tropical and warm
+                    year-round, with average temperatures between 25°C to 31°C
+                    (77°F to 88°F). While the city is generally dry, it
+                    experiences short, heavy rain showers so be sure to pack an
+                    umbrella.
+                  </p>
+                  <p>
+                    Time-wise, Singapore follows the GMT+8 time zone, which is
+                    important to note when planning your flights or meetings.
+                  </p>
+                  <br />
+                  Cruising through Singapore:
+                  <br />
+                  <p>
+                    One of the most luxurious ways to experience Singapore and
+                    the surrounding islands is by embarking on a cruise. Whether
+                    it’s a short getaway to Malaysia or a longer journey around
+                    Southeast Asia, the cruise experience offers world-class
+                    facilities, delectable dining, and mesmerising ocean views.
+                    Popular cruise lines like Royal Caribbean and Genting Dream
+                    Cruises offer routes departing from Singapore, making it a
+                    top choice for travellers seeking both adventure and
+                    relaxation.
+                  </p>
+                  <br />
+                  Facts About Singapore: Did You Know?
+                  <br />
+                  <ul>
+                    <li>
+                      -Singapore is famous for its cleanliness and strict laws,
+                      which help keep the city spotless.
+                    </li>
+                    <li>
+                      -The Merlion, a mythical creature with the head of a lion
+                      and the body of a fish, is the national symbol of
+                      Singapore.
+                    </li>
+                    <li>
+                      -Singapore is one of the greenest cities in the world,
+                      with nearly 50% of its land covered by greenery.
+                    </li>
+                    <li>
+                      The city is home to the world’s largest rooftop infinity
+                      pool at Marina Bay Sands.
+                    </li>
+                  </ul>
                 </span>
               )}
               <span
@@ -114,7 +316,7 @@ const Destination = () => {
             </p>
           </div>
 
-          <div className="md:w-1/4 text-sm h-auto md:h-auto md:text-sm bg-white text-black p-5 md:block">
+          {/* <div className="md:w-1/4 text-sm h-auto md:h-auto md:text-sm bg-white text-black p-5 md:block">
             <p className="text-xl md:text-3xl font-extrabold">
               About Singapore
             </p>
@@ -177,7 +379,7 @@ const Destination = () => {
                 Ask from Experts
               </p>
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div className="w-full h-auto flex-col  justify-center  px-4 md:px-32 font-oswald ">
@@ -789,7 +991,7 @@ const Destination = () => {
           </div>
         </div>
 
-        {isHiddenSectionVisible && (
+        {/* {isHiddenSectionVisible && (
           <div
             className="md:max-w-7xl md:mx-auto text-xl md:text-3xl  rounded-3xl  p-5 md:block "
             ref={targetDivRef}
@@ -1084,7 +1286,7 @@ const Destination = () => {
               </div>
             )}
           </div>
-        )}
+        )} */}
 
         <div className="w-full h-auto flex-col  justify-center  px-4 md:px-32 font-oswald ">
           <div className="w-full md:w-full  mt-12">
