@@ -23,30 +23,10 @@ function All_Cards() {
         />
       </div>
 
-      {/* <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald overflow-x-hidden">
-        <div className="max-w-7xl w-full rounded-3xl mt-10 shadow-xl shadow-black p-8 md:py-10 bg-fuchsia-950 text-white flex flex-col md:flex-row justify-between items-center gap-10">
-          <div className="flex flex-col text-yellow-300 font-bold text-4xl md:text-6xl">
-            <p style={{ textShadow: '2px 2px 4px rgba(1, 0, 0.5, 2)' }}>&quot;WANDERLUST</p>
-            <p style={{ textShadow: '2px 2px 4px rgba(1, 0, 0.5, 2)' }}>JOURNEYS&quot;</p>
-          </div>
-          <div className="flex flex-col text-center md:text-left">
-            <p className="text-xl md:text-4xl  text-white flex">
-            Discover the world's most breathtaking destinations and start your next adventure today!
-            </p>
-            <Link to="/Booking_Form">
-              <button
-                className="text-lg md:text-2xl font-bold mt-8 md:mt-5 text-yellow-300 rounded-lg py-2 px-4"
-                style={{ textShadow: '2px 2px 4px rgba(1, 0, 0.5, 2)' }}
-              >
-                BOOK NOW
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div> */}
-
       <div className="mt-8 px-4 w-full overflow-x-hidden">
-        <div className="max-w-7xl mx-auto flex flex-wrap gap-4 justify-center">
+        <div className=" mx-auto flex  justify-between gap-4">
+          {" "}
+          {/* Added gap-8 */}
           {/* Card 1 */}
           <div className="relative mb-8 bg-white shadow-2xl transform duration-500 ease-in-out hover:z-20 flex flex-col w-full sm:w-1/2 lg:w-1/4">
             <img
@@ -72,7 +52,6 @@ function All_Cards() {
               </div>
             </div>
           </div>
-
           {/* Card 2 */}
           <div className="relative mb-8 bg-white shadow-2xl transform duration-500 ease-in-out hover:z-20 flex flex-col w-full sm:w-1/2 lg:w-1/4">
             <img
@@ -98,7 +77,6 @@ function All_Cards() {
               </div>
             </div>
           </div>
-
           {/* Card 3 */}
           <div className="relative mb-8 bg-white shadow-2xl transform duration-500 ease-in-out hover:z-20 flex flex-col w-full sm:w-1/2 lg:w-1/4">
             <img src={Manali} alt="Asia" className="w-full h-64 object-cover" />
@@ -120,7 +98,6 @@ function All_Cards() {
               </div>
             </div>
           </div>
-
           {/* Card 4 */}
           <div className="relative mb-8 bg-white shadow-2xl transform duration-500 ease-in-out hover:z-20 flex flex-col w-full sm:w-1/2 lg:w-1/4">
             <img src={Agra} alt="India" className="w-full h-64 object-cover" />
