@@ -9,7 +9,7 @@ import {
   faChevronDown,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 // import Jaipur2 from '../Components/Image/Jaipur.jpg';
 import Tokyo from "../Components/Image/Tokyo.jpg";
@@ -37,29 +37,29 @@ const FAQItem = ({ question, answer }) => {
 
 const Destination = () => {
   const [seeMore, setSeeMore] = useState(false);
-  const [isHiddenSectionVisible, setIsHiddenSectionVisible] = useState(false);
-  const [expandedContent, setExpandedContent] = useState(null);
+  // const [isHiddenSectionVisible, setIsHiddenSectionVisible] = useState(false);
+  // const [expandedContent, setExpandedContent] = useState(null);
 
-  const handleAboutClick = (content) => {
-    setIsHiddenSectionVisible(true);
-    setExpandedContent(expandedContent === content ? null : content);
-    setSeeMore(true);
-    scrollToDiv();
-  };
+  // const handleAboutClick = (content) => {
+  //   setIsHiddenSectionVisible(true);
+  //   setExpandedContent(expandedContent === content ? null : content);
+  //   setSeeMore(true);
+  //   scrollToDiv();
+  // };
 
-  const targetDivRef = useRef(null);
+  // const targetDivRef = useRef(null);
 
-  const scrollToDiv = () => {
-    if (targetDivRef.current) {
-      targetDivRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const scrollToDiv = () => {
+  //   if (targetDivRef.current) {
+  //     targetDivRef.current.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
-  useEffect(() => {
-    if (isHiddenSectionVisible) {
-      scrollToDiv();
-    }
-  }, [isHiddenSectionVisible]);
+  // useEffect(() => {
+  //   if (isHiddenSectionVisible) {
+  //     scrollToDiv();
+  //   }
+  // }, [isHiddenSectionVisible]);
 
   return (
     <>
@@ -77,11 +77,11 @@ const Destination = () => {
         </div>
 
         <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald ">
-          <div className="flex flex-col shadow-lg shadow-black rounded-lg mt-5 md:flex-row text-black text-md md:h-auto max-w-7xl">
+          <div className="flex flex-col  rounded-lg  md:flex-row text-black text-md md:h-auto max-w-7xl">
             <div className="md:w-full p-5 md:h-auto">
               <p
                 className="text-xl md:text-3xl font-bold  text-center"
-                style={{ textShadow: "2px 2px 4px rgba(0.5,0,0.5,0.5)" }}
+                style={{ textShadow: "2px 2px 4px rgba(0,0,0,0)" }}
               >
                 Tokyo: A Fusion of Tradition and Modernity
               </p>
@@ -93,14 +93,14 @@ const Destination = () => {
                 preserves its rich cultural heritage through temples, shrines,
                 and historic landmarks. A visit to the iconic Senso-ji Temple in
                 Asakusa allows visitors to step back in time, while the modern
-                Shibuya Crossing showcases the city's vibrant urban energy. The
-                city is renowned for its shopping districts like Ginza and
+                Shibuya Crossing showcases the city&apos;s vibrant urban energy.
+                The city is renowned for its shopping districts like Ginza and
                 Harajuku, where fashion, electronics, and traditional crafts can
-                be found. Food lovers can indulge in Tokyo's world-famous
+                be found. Food lovers can indulge in Tokyo&apos;s world-famous
                 culinary scene, from sushi at Tsukiji Fish Market to exquisite
                 ramen in countless eateries. For a true cultural experience, try
-                a traditional tea ceremony or witness sumo wrestling, Japan's
-                national sport.
+                a traditional tea ceremony or witness sumo wrestling,
+                Japan&apos;s national sport.
                 {seeMore && (
                   <span>
                     Beyond its modern attractions, Tokyo offers serene parks and
@@ -113,13 +113,13 @@ const Destination = () => {
                     provides thrilling experiences like teamLab’s digital art
                     exhibitions. Visitors can also enjoy panoramic views of the
                     city from the Tokyo Skytree or Tokyo Tower. As night falls,
-                    Tokyo’s dazzling nightlife takes center stage. Whether it's
-                    karaoke, exploring lively neighborhoods like Shinjuku and
-                    Roppongi, or savoring a cocktail at a sky bar with views of
-                    the glittering city lights, Tokyo ensures an unforgettable
-                    after-dark experience. From traditional festivals to
-                    futuristic attractions, Tokyo offers a journey into the
-                    heart of Japan’s vibrant culture and innovation.
+                    Tokyo’s dazzling nightlife takes center stage. Whether
+                    it&apos;s karaoke, exploring lively neighborhoods like
+                    Shinjuku and Roppongi, or savoring a cocktail at a sky bar
+                    with views of the glittering city lights, Tokyo ensures an
+                    unforgettable after-dark experience. From traditional
+                    festivals to futuristic attractions, Tokyo offers a journey
+                    into the heart of Japan’s vibrant culture and innovation.
                   </span>
                 )}
                 <span

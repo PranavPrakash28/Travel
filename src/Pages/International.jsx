@@ -282,6 +282,7 @@ function Domestic() {
           {/* 1st card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Tokyo} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>TOKYO</h1>
@@ -304,6 +305,7 @@ function Domestic() {
           {/* 2nd card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Paris} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>PARIS</h1>
@@ -326,6 +328,7 @@ function Domestic() {
           {/* 3rd card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Dubai} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>DUBAI</h1>
@@ -352,6 +355,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>MALDIVES</h1>
@@ -379,6 +383,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>SWITZERLAND</h1>
@@ -405,6 +410,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>AUSTRALIA</h1>
@@ -431,6 +437,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>NEW ZEALAND</h1>
@@ -453,6 +460,7 @@ function Domestic() {
           {/* 8th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Greece} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>GREECE</h1>
@@ -477,6 +485,7 @@ function Domestic() {
           {/* 9th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Vietnam} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>VIETNAM</h1>
@@ -503,6 +512,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>MALAYSIA</h1>
@@ -525,6 +535,7 @@ function Domestic() {
           {/* 11th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Georgia} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>GEORGIA</h1>
@@ -551,6 +562,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>MALDIVES</h1>
@@ -578,6 +590,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>SEYCHELLES</h1>
@@ -604,6 +617,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>MAURITIUS</h1>
@@ -626,6 +640,7 @@ function Domestic() {
           {/* 15th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Turkey} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>TURKEY</h1>
@@ -648,6 +663,7 @@ function Domestic() {
           {/* 16th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Armenia} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>ARMENIA</h1>
@@ -675,6 +691,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>SINGAPORE</h1>
@@ -701,6 +718,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>AZERBAIJAN</h1>
@@ -727,6 +745,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>SRI LANKA</h1>

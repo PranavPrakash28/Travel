@@ -9,7 +9,7 @@ import {
   faChevronDown,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Dubai from "../Components/Image/Dubai.jpg";
 import Footer from "../Components/Footer/Footer";
@@ -76,7 +76,7 @@ const Destination = () => {
         </div>
 
         <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald ">
-          <div className="flex flex-col shadow-lg shadow-black rounded-lg mt-5 md:flex-row text-black text-md md:h-auto max-w-7xl">
+          <div className="flex flex-col  rounded-lg md:flex-row text-black text-md md:h-auto max-w-7xl">
             <div className="md:w-full p-5  md:h-auto">
               <p className="text-xl md:text-3xl font-bold text-center">
                 Dubai: A Dazzling Fusion of Tradition and Futurism
@@ -109,8 +109,8 @@ const Destination = () => {
                 Gold Souk and Spice Souk in Deira offer a glimpse into the
                 city’s Arabian roots, with stalls brimming with jewelry, spices,
                 and textiles. Culinary Delights Food lovers will find Dubai a
-                culinary paradise. The city's vibrant food scene ranges from
-                street food like shawarma and falafel to gourmet dining
+                culinary paradise. The city&apos;s vibrant food scene ranges
+                from street food like shawarma and falafel to gourmet dining
                 experiences at Michelin-starred restaurants. Visitors can
                 indulge in traditional Emirati dishes such as machboos (spiced
                 rice with meat) and luqaimat (sweet dumplings), or explore

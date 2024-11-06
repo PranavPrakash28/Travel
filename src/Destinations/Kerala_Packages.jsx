@@ -9,7 +9,7 @@ import {
   faChevronDown,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Kerala from "../Components/Image/Kerala.jpg";
 import Kerala_Packages from "../Components/Image/Kerala2.jpg";
 import { Link } from "react-router-dom";
@@ -77,11 +77,11 @@ const Destination = () => {
         </div>
 
         <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald ">
-          <div className="flex flex-col shadow-lg shadow-black rounded-lg mt-5 md:flex-row text-black text-md md:h-auto max-w-7xl">
+          <div className="flex flex-col rounded-lg  md:flex-row text-black text-md md:h-auto max-w-7xl">
             <div className="md:w-full p-5  md:h-auto">
               <p
                 className="text-xl md:text-3xl font-bold text-center text-black"
-                style={{ textShadow: "2px 2px 4px rgba(0.5,0,0.5,0.5)" }}
+                style={{ textShadow: "2px 2px 4px rgba(0,0,0,0)" }}
               >
                 Kerala: A Symphony of Nature and Tradition
               </p>

@@ -9,7 +9,7 @@ import {
   faChevronDown,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Goa from "../Components/Image/Goa.jpg";
 import Footer from "../Components/Footer/Footer";
@@ -75,16 +75,16 @@ const Destination = () => {
           {/* image */}
         </div>
         <div className="w-full h-auto flex  justify-center  px-4 md:px-0 font-oswald ">
-          <div className="flex flex-col md:flex-row rounded-lg shadow-lg shadow-black text-md md:h-auto md:max-w-7xl mt-5 ">
+          <div className="flex flex-col md:flex-row rounded-lg  text-md md:h-auto md:max-w-7xl  ">
             {" "}
             {/* Adjusted text size */}
             <div className="md:w-full p-5  md:h-auto">
               <p
                 className="text-xl md:text-3xl font-bold  text-center"
-                style={{ textShadow: "2px 2px 4px rgba(0.5,0.5,0,0.5)" }}
+                style={{ textShadow: "2px 2px 4px rgba(0,0,0,0)" }}
               >
-                Goa, India's Coastal Paradise: A Blend of Heritage and Modern
-                Vibes
+                Goa, India&apos;s Coastal Paradise: A Blend of Heritage and
+                Modern Vibes
               </p>{" "}
               {/* Adjusted text size */}
               <p className="mt-2 text-md md:text-xl pt-8 leading-6 md:leading-1">
@@ -135,12 +135,12 @@ const Destination = () => {
                     rooftop bar with views of the Arabian Sea. As the sun sets,
                     Goa’s beach shacks transform into lively hotspots, with live
                     music and bonfires, creating a magical after-dark
-                    atmosphere. Whether you're exploring the historic streets of
-                    Panaji or enjoying the laid-back coastal charm, Goa offers a
-                    perfect mix of cultural richness and modern leisure. From
-                    ancient churches to thrilling beach sports, Goa promises an
-                    unforgettable escape into a world of sun, sand, and
-                    heritage.
+                    atmosphere. Whether you&apos;re exploring the historic
+                    streets of Panaji or enjoying the laid-back coastal charm,
+                    Goa offers a perfect mix of cultural richness and modern
+                    leisure. From ancient churches to thrilling beach sports,
+                    Goa promises an unforgettable escape into a world of sun,
+                    sand, and heritage.
                   </span>
                 )}
                 <span

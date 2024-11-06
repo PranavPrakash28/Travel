@@ -9,7 +9,7 @@ import {
   faChevronDown,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 // import Jaipur2 from '../Components/Image/Jaipur.jpg';
 import Jaipur from "../Components/Image/Jaipur2.jpg";
@@ -77,13 +77,13 @@ const Destination = () => {
         </div>
 
         <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald ">
-          <div className="flex flex-col md:flex-row max-w-7xl shadow-lg mt-5 shadow-black rounded-lg text-black text-md md:h-auto">
+          <div className="flex flex-col md:flex-row max-w-7xl  rounded-lg text-black text-md md:h-auto">
             {" "}
             {/* Adjusted text size */}
             <div className="md:w-full p-5 md:h-auto">
               <p
                 className="text-xl md:text-3xl font-bold text-center "
-                style={{ textShadow: "2px 2px 4px rgba(0.5,0,0.5,0.5)" }}
+                style={{ textShadow: "2px 2px 4px rgba(0,0,0,0)" }}
               >
                 Jaipur: The Enchanting Pink City of Royal Heritage
               </p>{" "}

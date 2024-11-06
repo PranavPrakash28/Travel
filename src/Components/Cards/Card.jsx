@@ -5,7 +5,7 @@ import Singapore01 from "../Image/Singapore.jpg";
 
 function Card() {
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap justify-center ">
       {/* Card for Bali */}
       <Link to="/Bali_Packages">
         <div className="relative mb-20 bg-white border-t-blue-600 border-t-8 shadow-2xl overflow-hidden transform transition-transform duration-500 ease-in-out hover:-translate-y-10 hover:z-20 w-72 h-[30rem] md:w-[18rem] md:h-[30rem] flex flex-col">

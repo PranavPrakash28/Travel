@@ -249,21 +249,26 @@ function Domestic() {
         {/* Cards Section */}
         <div className="w-full flex flex-wrap md:max-w-7xl mx-auto px-4 justify-center gap-6 mb-10 ">
           {/* 1st card */}
-          <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+          <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72 rounded-lg font-oswald mx-auto overflow-hidden">
             <img src={Jaipur} alt="/" className="h-full w-full object-cover" />
+
+            <div className="absolute inset-0 bg-black opacity-50"></div>
+
             <div className="absolute top-2 left-2 text-white">
-              <div className="text-2xl  font-normal hover:text-black">
+              <div className="text-2xl font-normal hover:text-black">
                 <h1>JAIPUR</h1>
               </div>
             </div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2  font-light -translate-y-1/2 text-center text-white">
+
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
               <h1 className="mt-2 text-sm">
                 Creating unforgettable adventures, one group trip at a time.
               </h1>
             </div>
+
             <div className="absolute bottom-0 left-0 m-2">
               <Link to="/Jaipur_Packages">
-                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex  justify-center items-center hover:bg-white hover:text-black">
+                <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                   READ MORE
                 </button>
               </Link>
@@ -273,6 +278,7 @@ function Domestic() {
           {/* 2nd card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Kerala} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>KERALA</h1>
@@ -295,6 +301,7 @@ function Domestic() {
           {/* 3rd card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Goa} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>GOA</h1>
@@ -317,6 +324,7 @@ function Domestic() {
           {/* 4th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Agra} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>AGRA</h1>
@@ -340,6 +348,7 @@ function Domestic() {
           {/* 5th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Ladakh} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>LADAKH</h1>
@@ -366,6 +375,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>VARANASI</h1>
@@ -392,6 +402,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>RANTHAMBORE</h1>
@@ -414,6 +425,7 @@ function Domestic() {
           {/* 8th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Mysore} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>MYSORE</h1>
@@ -438,6 +450,7 @@ function Domestic() {
           {/* 1st card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Jaipur} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl  font-normal hover:text-black">
                 <h1>JAIPUR</h1>
@@ -460,6 +473,7 @@ function Domestic() {
           {/* 2nd card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Kerala} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>KERALA</h1>
@@ -482,6 +496,7 @@ function Domestic() {
           {/* 3rd card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Goa} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>GOA</h1>
@@ -504,6 +519,7 @@ function Domestic() {
           {/* 4th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Agra} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>AGRA</h1>
@@ -527,6 +543,7 @@ function Domestic() {
           {/* 5th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Ladakh} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal  hover:text-black">
                 <h1>LADAKH</h1>
@@ -553,6 +570,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal   hover:text-black">
                 <h1>VARANASI</h1>
@@ -579,6 +597,7 @@ function Domestic() {
               alt="/"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>RANTHAMBORE</h1>
@@ -601,6 +620,7 @@ function Domestic() {
           {/* 8th card */}
           <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
             <img src={Mysore} alt="/" className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="absolute top-2 left-2 text-white">
               <div className="text-2xl font-normal hover:text-black">
                 <h1>MYSORE</h1>

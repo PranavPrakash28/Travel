@@ -9,7 +9,7 @@ import {
   faChevronDown,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Maldives from "../Components/Image/Maldives.jpg";
 import Footer from "../Components/Footer/Footer";
@@ -76,11 +76,11 @@ const Destination = () => {
         </div>
 
         <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald ">
-          <div className="flex flex-col shadow-lg shadow-black rounded-lg mt-5 md:flex-row text-black text-md md:h-auto max-w-7xl">
+          <div className="flex flex-col rounded-lg  md:flex-row text-black text-md md:h-auto max-w-7xl">
             <div className="md:w-full p-5 md:h-auto">
               <p
                 className="text-xl md:text-3xl font-bold  text-center"
-                style={{ textShadow: "2px 2px 4px rgba(0.5,0,0.5,0.5)" }}
+                style={{ textShadow: "2px 2px 4px rgba(0,0,0,0)" }}
               >
                 Maldives: A Tropical Paradise of Serenity and Luxury
               </p>
@@ -89,33 +89,33 @@ const Destination = () => {
                 synonymous with pristine white-sand beaches, turquoise waters,
                 and an unparalleled sense of tranquility. Known for its
                 luxurious overwater villas and crystal-clear lagoons, the
-                Maldives offers a tropical getaway where nature's beauty meets
-                the pinnacle of relaxation and indulgence. This island paradise
-                is made up of over 1,000 coral islands, each boasting its own
-                unique charm and allure. Beaches and Natural Beauty The Maldives
-                is renowned for its idyllic beaches, where powdery white sands
-                meet warm, azure waters. Popular islands like Maafushi,
-                Hulhumale, and the exclusive private resorts offer visitors a
-                chance to unwind in pure paradise. Snorkeling and diving in the
-                Maldives are world-class experiences, with vibrant coral reefs
-                and an abundance of marine life, including colorful fish, manta
-                rays, and sea turtles, just waiting to be explored. Luxury and
-                Overwater Villas The Maldives is known for its luxurious
-                resorts, each situated on its own private island. These resorts
-                offer world-class hospitality, with overwater bungalows that
-                allow guests to wake up to stunning views of the Indian Ocean.
-                From private plunge pools to underwater restaurants, the
-                Maldives sets the standard for luxury. Whether you’re seeking a
-                romantic honeymoon getaway or a relaxing family vacation, the
-                Maldives’ resorts offer experiences tailored to every traveler’s
-                desires. Adventure and Water Sports Beyond its beauty, the
-                Maldives is a hub for water-based adventures. The calm, clear
-                waters are perfect for snorkeling, scuba diving, and kayaking,
-                while more adventurous visitors can indulge in jet skiing,
-                windsurfing, or parasailing. The Maldives is home to some of the
-                world’s most renowned dive sites, like Banana Reef and Manta
-                Point, where you can swim alongside exotic marine life and
-                explore stunning coral gardens. Cultural Experiences.
+                Maldives offers a tropical getaway where nature&apos;s beauty
+                meets the pinnacle of relaxation and indulgence. This island
+                paradise is made up of over 1,000 coral islands, each boasting
+                its own unique charm and allure. Beaches and Natural Beauty The
+                Maldives is renowned for its idyllic beaches, where powdery
+                white sands meet warm, azure waters. Popular islands like
+                Maafushi, Hulhumale, and the exclusive private resorts offer
+                visitors a chance to unwind in pure paradise. Snorkeling and
+                diving in the Maldives are world-class experiences, with vibrant
+                coral reefs and an abundance of marine life, including colorful
+                fish, manta rays, and sea turtles, just waiting to be explored.
+                Luxury and Overwater Villas The Maldives is known for its
+                luxurious resorts, each situated on its own private island.
+                These resorts offer world-class hospitality, with overwater
+                bungalows that allow guests to wake up to stunning views of the
+                Indian Ocean. From private plunge pools to underwater
+                restaurants, the Maldives sets the standard for luxury. Whether
+                you’re seeking a romantic honeymoon getaway or a relaxing family
+                vacation, the Maldives’ resorts offer experiences tailored to
+                every traveler’s desires. Adventure and Water Sports Beyond its
+                beauty, the Maldives is a hub for water-based adventures. The
+                calm, clear waters are perfect for snorkeling, scuba diving, and
+                kayaking, while more adventurous visitors can indulge in jet
+                skiing, windsurfing, or parasailing. The Maldives is home to
+                some of the world’s most renowned dive sites, like Banana Reef
+                and Manta Point, where you can swim alongside exotic marine life
+                and explore stunning coral gardens. Cultural Experiences.
                 {seeMore && (
                   <span>
                     Though the Maldives is best known for its natural beauty, it

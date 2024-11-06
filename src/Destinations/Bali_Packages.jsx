@@ -82,10 +82,10 @@ const Destination = () => {
           {/* image */}
         </div>
 
-        <div className="flex flex-col md:flex-row rounded-2xl  mt-10 md:max-w-7xl mx-auto px-4 text-md md:h-auto">
-          <div className="md:w-full p-5  md:h-auto">
+        <div className="flex flex-col md:flex-row rounded-2xl  md:max-w-7xl mx-auto px-4 text-md md:h-auto">
+          <div className="md:w-full p-2 md:h-auto">
             <p
-              className="text-xl md:text-4xl font-bold"
+              className="text-xl md:text-4xl font-bold text-center"
               style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0)" }}
             >
               Bali a serene Beauty

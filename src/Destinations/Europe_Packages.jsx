@@ -273,6 +273,7 @@ function Loc_Europe() {
         {/* 1st card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Paris} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>PARIS</p>
@@ -285,7 +286,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -295,6 +296,7 @@ function Loc_Europe() {
         {/* 2nd card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Rome} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>ROME</p>
@@ -307,7 +309,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -317,6 +319,7 @@ function Loc_Europe() {
         {/* 3rd card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Barcelona} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>BARCELONA</p>
@@ -329,7 +332,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -339,6 +342,7 @@ function Loc_Europe() {
         {/* 4th card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={London} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>LONDON</p>
@@ -351,7 +355,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -362,6 +366,7 @@ function Loc_Europe() {
         {/* 5th card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Amsterdam} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>AMSTERDAM</p>
@@ -374,7 +379,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -384,6 +389,7 @@ function Loc_Europe() {
         {/* 6th card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Zurich} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>ZURICH</p>
@@ -396,7 +402,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -406,6 +412,7 @@ function Loc_Europe() {
         {/* 7th card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Prague} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>PRAGUE</p>
@@ -418,7 +425,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -428,6 +435,7 @@ function Loc_Europe() {
         {/* 8th card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Vienna} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>VIENNA</p>
@@ -440,7 +448,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -452,6 +460,7 @@ function Loc_Europe() {
         {/* 1st card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Paris} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>PARIS</p>
@@ -464,7 +473,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -474,6 +483,7 @@ function Loc_Europe() {
         {/* 2nd card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Rome} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>ROME</p>
@@ -486,7 +496,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -496,6 +506,7 @@ function Loc_Europe() {
         {/* 3rd card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Barcelona} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>BARCELONA</p>
@@ -508,7 +519,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -518,6 +529,7 @@ function Loc_Europe() {
         {/* 4th card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={London} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>LONDON</p>
@@ -530,7 +542,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -541,6 +553,7 @@ function Loc_Europe() {
         {/* 5th card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Amsterdam} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>AMSTERDAM</p>
@@ -553,7 +566,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -563,6 +576,7 @@ function Loc_Europe() {
         {/* 6th card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Zurich} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>ZURICH</p>
@@ -575,7 +589,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -585,6 +599,7 @@ function Loc_Europe() {
         {/* 7th card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Prague} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>PRAGUE</p>
@@ -597,7 +612,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
@@ -607,6 +622,7 @@ function Loc_Europe() {
         {/* 8th card */}
         <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Vienna} alt="/" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
             <div className="text-2xl font-normal">
               <p>VIENNA</p>
@@ -619,7 +635,7 @@ function Loc_Europe() {
           </div>
           <div className="absolute bottom-0 left-0 m-2">
             <Link to="/Booking_Form">
-              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center">
+              <button className="w-24 h-8 border border-white text-white font-bold rounded-md flex justify-center items-center hover:bg-white hover:text-black">
                 READ MORE
               </button>
             </Link>
