@@ -201,12 +201,12 @@ function Loc_Europe() {
       <div className="w-full h-auto flex justify-center px-4 md:px-0 font-oswald">
         <div className="max-w-7xl rounded-3xl   flex flex-col md:flex justify-between items-center gap-10">
           <p
-            className="text-xl md:text-5xl  font-bold md:text-start"
+            className="text-xl md:text-5xl mt-8 font-bold md:text-start"
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0)" }}
           >
             Europe: A Continent of Endless Discovery
           </p>
-          <p className="mt-2 text-md md:text-xl pt-8 leading-6 md:leading-1">
+          <p className=" text-md md:text-xl leading-6 md:leading-1">
             Europe offers a captivating array of destinations, each with its own
             unique allure and experiences for travelers. From the breathtaking
             fjords of Norway to the charming canals of Venice, Europe presents a

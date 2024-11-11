@@ -12,7 +12,7 @@ import {
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Singapore01 from "../Components/Image/Singapore.jpg";
-
+import Singapore02 from "../Components/Image/Singapore-02.jpg";
 import Singapore03 from "../Components/Image/Singapore-03.jpg";
 import Singapore04 from "../Components/Image/Singapore-04.jpg";
 import Singapore05 from "../Components/Image/Singapore-05.jpg";
@@ -384,609 +384,587 @@ const Destination = () => {
 
         <div className="w-full h-auto flex-col  justify-center  px-4 md:px-32 font-oswald ">
           {/* PACKAGE 1 */}
-          <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
-            <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-              <img
-                src={Singapore01}
-                className="w-full h-full object-cover"
-                alt="Singapore"
-              />
-            </div>
+          <div className="w-full max-w-screen-2xl  mx-auto flex flex-col md:flex-row p-4">
+            <div className="flex flex-col md:flex-row mt-8 mb-8 w-full mx-auto">
+              {/* Card Container */}
+              <div className="flex md:flex-row flex-col border-2 rounded-lg border-gray-300 flex-grow">
+                {/* Image Section */}
+                <div className="w-full md:w-56 md:h-60 h-60 flex items-center justify-center">
+                  <img
+                    src={Singapore01}
+                    className="w-full h-full object-cover rounded-l-lg "
+                    alt="Bali"
+                  />
+                </div>
 
-            <div className="ml-6 md:ml-8">
-              <p className="text-lg md:text-2xl font-bold">
-                Glimpse of Singapore Package
-              </p>
-              <p className="text-sm md:text-lg font-light max-w-[30rem]">
-                Night Safari, Universal Studios, Sentosa Islands
-              </p>
-              <div
-                className="flex flex-wrap md:flex-row pt-6 md:pt-12 justify-center md:justify-between
-             md:gap-5"
-              >
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPlane} className="text-md" />
+                {/* Text & Icons Section */}
+                <div className="flex flex-col ml-4 md:ml-6 flex-grow">
+                  <div className="flex flex-wrap">
+                    <p className="text-lg md:text-3xl border-b-2 border-r-2 border-gray-300 p-2 flex-grow">
+                      Glimpse of Singapore Package
+                    </p>
+                    <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300 flex-shrink">
+                      4 Nights 5 Days
+                    </p>
+                  </div>
+                  <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300">
+                    Night Safari, Universal Studios, Sentosa Islands (4N-5D)
                   </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    FLIGHTS
+                  <p className="text-md font-extralight p-2">
+                    Customized Holidays
                   </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPassport} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    VISA
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBed} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    HOTELS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faCamera} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    SIGHTSEEING
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBowlFood} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    MEALS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faUser} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    TOUR MANAGER
-                  </p>
+
+                  {/* Icons Section */}
+                  <div className="flex flex-wrap justify-center md:justify-start gap-4 text-red-600 p-2">
+                    {/* Each Icon */}
+                    {[
+                      faPlane,
+                      faPassport,
+                      faBed,
+                      faCamera,
+                      faBowlFood,
+                      faUser,
+                    ].map((icon, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-col items-center mb-4"
+                      >
+                        <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-300 cursor-pointer hover:bg-red-500 hover:text-white">
+                          <FontAwesomeIcon icon={icon} className="text-md" />
+                        </p>
+                        <p className="text-sm hidden md:block cursor-pointer mt-1">
+                          {
+                            [
+                              "FLIGHTS",
+                              "VISA",
+                              "HOTELS",
+                              "SIGHTSEEING",
+                              "MEALS",
+                              "TOUR MANAGER",
+                            ][index]
+                          }
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="h-full ml-0 md:ml-20 mt-6 md:gap-6 md:mt-10  flex flex-col md:flex-row md:items-center justify-center">
-              <Link to="/Booking_Form">
-                <button className="px-4 py-2 md:mt-6 font-oswald w-fit bg-blue-600 text-white font-bold border-none text-md">
-                  BOOK ONLINE
-                </button>
-              </Link>
-              <Link to="/contact">
-                <button className="px-4 py-2 mt-6 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
-                  INQUIRY
-                </button>
-              </Link>
+              {/* Booking & Inquiry Buttons */}
+              <div className="flex flex-row gap-1 items-center rounded-lg p-4 w-full md:w-60 md:h-60 h-fit border-2 border-gray-300 justify-center">
+                <Link to="/Booking_Form">
+                  <button className="px-4 py-2 font-oswald w-fit bg-blue-600 text-white font-bold text-md">
+                    BOOK ONLINE
+                  </button>
+                </Link>
+                <Link to="/contact">
+                  <button className="px-4 py-2 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
+                    INQUIRY
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
           {/* PACKAGE 2 */}
-          <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
-            <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-              <img
-                src="/Singapore-02.jpg"
-                className="w-full h-full object-cover"
-                alt="Singapore"
-              />
-            </div>
+          <div className="w-full max-w-screen-2xl  mx-auto flex flex-col md:flex-row p-4">
+            <div className="flex flex-col md:flex-row mt-8 mb-8 w-full mx-auto">
+              {/* Card Container */}
+              <div className="flex md:flex-row flex-col border-2 rounded-lg border-gray-300 flex-grow">
+                {/* Image Section */}
+                <div className="w-full md:w-56 md:h-60 h-60 flex items-center justify-center">
+                  <img
+                    src={Singapore02}
+                    className="w-full h-full object-cover rounded-l-lg "
+                    alt="Bali"
+                  />
+                </div>
 
-            <div className="ml-6 md:ml-8">
-              <p className="text-lg md:text-2xl font-bold">
-                A Thrilling Singapore Escapade
-              </p>
-              <p className="text-sm md:text-lg font-light max-w-[30rem]">
-                Night Safari, Universal Studios, Sentosa Islands, Gardens by the
-                bay, Marina Bay Sands
-              </p>
-              <div
-                className="flex flex-wrap md:flex-row pt-6 md:pt-12 justify-center md:justify-between
-             md:gap-5"
-              >
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPlane} className="text-md" />
+                {/* Text & Icons Section */}
+                <div className="flex flex-col ml-4 md:ml-6 flex-grow">
+                  <div className="flex flex-wrap">
+                    <p className="text-lg md:text-3xl border-b-2 border-r-2 border-gray-300 p-2 flex-grow">
+                      A Thrilling Singapore Escapade
+                    </p>
+                    <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300 flex-shrink">
+                      4 Nights 5 Days
+                    </p>
+                  </div>
+                  <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300">
+                    Night Safari, Universal Studios, Sentosa Islands, Gardens by
+                    the bay, Marina Bay Sands (4N-5D)
                   </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    FLIGHTS
+                  <p className="text-md font-extralight p-2">
+                    Customized Holidays
                   </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPassport} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    VISA
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBed} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    HOTELS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faCamera} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    SIGHTSEEING
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBowlFood} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    MEALS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faUser} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    TOUR MANAGER
-                  </p>
+
+                  {/* Icons Section */}
+                  <div className="flex flex-wrap justify-center md:justify-start gap-4 text-red-600 p-2">
+                    {/* Each Icon */}
+                    {[
+                      faPlane,
+                      faPassport,
+                      faBed,
+                      faCamera,
+                      faBowlFood,
+                      faUser,
+                    ].map((icon, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-col items-center mb-4"
+                      >
+                        <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-300 cursor-pointer hover:bg-red-500 hover:text-white">
+                          <FontAwesomeIcon icon={icon} className="text-md" />
+                        </p>
+                        <p className="text-sm hidden md:block cursor-pointer mt-1">
+                          {
+                            [
+                              "FLIGHTS",
+                              "VISA",
+                              "HOTELS",
+                              "SIGHTSEEING",
+                              "MEALS",
+                              "TOUR MANAGER",
+                            ][index]
+                          }
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="h-full ml-0 md:ml-20 mt-6 md:gap-6 md:mt-10  flex flex-col md:flex-row md:items-center justify-center">
-              <Link to="/Booking_Form">
-                <button className="px-4 py-2 md:mt-6 font-oswald w-fit bg-blue-600 text-white font-bold border-none text-md">
-                  BOOK ONLINE
-                </button>
-              </Link>
-              <Link to="/contact">
-                <button className="px-4 py-2 mt-6 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
-                  INQUIRY
-                </button>
-              </Link>
+              {/* Booking & Inquiry Buttons */}
+              <div className="flex flex-row gap-1 items-center rounded-lg p-4 w-full md:w-60 md:h-60 h-fit border-2 border-gray-300 justify-center">
+                <Link to="/Booking_Form">
+                  <button className="px-4 py-2 font-oswald w-fit bg-blue-600 text-white font-bold text-md">
+                    BOOK ONLINE
+                  </button>
+                </Link>
+                <Link to="/contact">
+                  <button className="px-4 py-2 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
+                    INQUIRY
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
           {/* PACKAGE 3 */}
-          <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
-            <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-              <img
-                src={Singapore03}
-                className="w-full h-full object-cover"
-                alt="Singapore"
-              />
-            </div>
+          <div className="w-full max-w-screen-2xl  mx-auto flex flex-col md:flex-row p-4">
+            <div className="flex flex-col md:flex-row mt-8 mb-8 w-full mx-auto">
+              {/* Card Container */}
+              <div className="flex md:flex-row flex-col border-2 rounded-lg border-gray-300 flex-grow">
+                {/* Image Section */}
+                <div className="w-full md:w-56 md:h-60 h-60 flex items-center justify-center">
+                  <img
+                    src={Singapore03}
+                    className="w-full h-full object-cover rounded-l-lg "
+                    alt="Bali"
+                  />
+                </div>
 
-            <div className="ml-6 md:ml-8">
-              <p className="text-lg md:text-2xl font-bold">
-                Singapore Honeymoon Package
-              </p>
-              <p className="text-sm md:text-lg font-light max-w-[30rem]">
-                Night Safari, Universal Studios, Sentosa Islands, Gardens by the
-                bay, Marina Bay Sands, Singapore Zoo
-              </p>
-              <div
-                className="flex flex-wrap md:flex-row pt-6 md:pt-12 justify-center md:justify-between
-             md:gap-5"
-              >
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPlane} className="text-md" />
+                {/* Text & Icons Section */}
+                <div className="flex flex-col ml-4 md:ml-6 flex-grow">
+                  <div className="flex flex-wrap">
+                    <p className="text-lg md:text-3xl border-b-2 border-r-2 border-gray-300 p-2 flex-grow">
+                      Singapore Honeymoon Package
+                    </p>
+                    <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300 flex-shrink">
+                      4 Nights 5 Days
+                    </p>
+                  </div>
+                  <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300">
+                    Night Safari, Universal Studios, Sentosa Islands, Gardens by
+                    the bay, Marina Bay Sands, Singapore Zoo (4N-5D)
                   </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    FLIGHTS
+                  <p className="text-md font-extralight p-2">
+                    Customized Holidays
                   </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPassport} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    VISA
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBed} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    HOTELS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faCamera} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    SIGHTSEEING
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBowlFood} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    MEALS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faUser} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    TOUR MANAGER
-                  </p>
+
+                  {/* Icons Section */}
+                  <div className="flex flex-wrap justify-center md:justify-start gap-4 text-red-600 p-2">
+                    {/* Each Icon */}
+                    {[
+                      faPlane,
+                      faPassport,
+                      faBed,
+                      faCamera,
+                      faBowlFood,
+                      faUser,
+                    ].map((icon, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-col items-center mb-4"
+                      >
+                        <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-300 cursor-pointer hover:bg-red-500 hover:text-white">
+                          <FontAwesomeIcon icon={icon} className="text-md" />
+                        </p>
+                        <p className="text-sm hidden md:block cursor-pointer mt-1">
+                          {
+                            [
+                              "FLIGHTS",
+                              "VISA",
+                              "HOTELS",
+                              "SIGHTSEEING",
+                              "MEALS",
+                              "TOUR MANAGER",
+                            ][index]
+                          }
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="h-full ml-0 md:ml-20 mt-6 md:gap-6 md:mt-10  flex flex-col md:flex-row md:items-center justify-center">
-              <Link to="/Booking_Form">
-                <button className="px-4 py-2 md:mt-6 font-oswald w-fit bg-blue-600 text-white font-bold border-none text-md">
-                  BOOK ONLINE
-                </button>
-              </Link>
-              <Link to="/contact">
-                <button className="px-4 py-2 mt-6 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
-                  INQUIRY
-                </button>
-              </Link>
+              {/* Booking & Inquiry Buttons */}
+              <div className="flex flex-row gap-1 items-center rounded-lg p-4 w-full md:w-60 md:h-60 h-fit border-2 border-gray-300 justify-center">
+                <Link to="/Booking_Form">
+                  <button className="px-4 py-2 font-oswald w-fit bg-blue-600 text-white font-bold text-md">
+                    BOOK ONLINE
+                  </button>
+                </Link>
+                <Link to="/contact">
+                  <button className="px-4 py-2 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
+                    INQUIRY
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* PACKAGE 4 */}
-          <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
-            <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-              <img
-                src={Singapore04}
-                className="w-full h-full object-cover"
-                alt="Singapore"
-              />
-            </div>
+          <div className="w-full max-w-screen-2xl  mx-auto flex flex-col md:flex-row p-4">
+            <div className="flex flex-col md:flex-row mt-8 mb-8 w-full mx-auto">
+              {/* Card Container */}
+              <div className="flex md:flex-row flex-col border-2 rounded-lg border-gray-300 flex-grow">
+                {/* Image Section */}
+                <div className="w-full md:w-56 md:h-60 h-60 flex items-center justify-center">
+                  <img
+                    src={Singapore04}
+                    className="w-full h-full object-cover rounded-l-lg "
+                    alt="Bali"
+                  />
+                </div>
 
-            <div className="ml-6 md:ml-8">
-              <p className="text-lg md:text-2xl font-bold">
-                Singapore Cruise Package - Genting Dream
-              </p>
-              <p className="text-sm md:text-lg font-light max-w-[30rem]">
-                Night Safari, Universal Studios, Sentosa Islands, Genting Dream
-                Cruise
-              </p>
-              <div
-                className="flex flex-wrap md:flex-row pt-6 md:pt-12 justify-center md:justify-between
-             md:gap-5"
-              >
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPlane} className="text-md" />
+                {/* Text & Icons Section */}
+                <div className="flex flex-col ml-4 md:ml-6 flex-grow">
+                  <div className="flex flex-wrap">
+                    <p className="text-lg md:text-3xl border-b-2 border-r-2 border-gray-300 p-2 flex-grow">
+                      Singapore Cruise Package - Genting Dream
+                    </p>
+                    <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300 flex-shrink">
+                      4 Nights 5 Days
+                    </p>
+                  </div>
+                  <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300">
+                    Night Safari, Universal Studios, Sentosa Islands, Genting
+                    Dream Cruise (4N-5D)
                   </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    FLIGHTS
+                  <p className="text-md font-extralight p-2">
+                    Customized Holidays
                   </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPassport} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    VISA
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBed} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    HOTELS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faCamera} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    SIGHTSEEING
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBowlFood} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    MEALS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faUser} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    TOUR MANAGER
-                  </p>
+
+                  {/* Icons Section */}
+                  <div className="flex flex-wrap justify-center md:justify-start gap-4 text-red-600 p-2">
+                    {/* Each Icon */}
+                    {[
+                      faPlane,
+                      faPassport,
+                      faBed,
+                      faCamera,
+                      faBowlFood,
+                      faUser,
+                    ].map((icon, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-col items-center mb-4"
+                      >
+                        <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-300 cursor-pointer hover:bg-red-500 hover:text-white">
+                          <FontAwesomeIcon icon={icon} className="text-md" />
+                        </p>
+                        <p className="text-sm hidden md:block cursor-pointer mt-1">
+                          {
+                            [
+                              "FLIGHTS",
+                              "VISA",
+                              "HOTELS",
+                              "SIGHTSEEING",
+                              "MEALS",
+                              "TOUR MANAGER",
+                            ][index]
+                          }
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="h-full ml-0 md:ml-20 mt-6 md:gap-6 md:mt-10  flex flex-col md:flex-row md:items-center justify-center">
-              <Link to="/Booking_Form">
-                <button className="px-4 py-2 md:mt-6 font-oswald w-fit bg-blue-600 text-white font-bold border-none text-md">
-                  BOOK ONLINE
-                </button>
-              </Link>
-              <Link to="/contact">
-                <button className="px-4 py-2 mt-6 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
-                  INQUIRY
-                </button>
-              </Link>
+              {/* Booking & Inquiry Buttons */}
+              <div className="flex flex-row gap-1 items-center rounded-lg p-4 w-full md:w-60 md:h-60 h-fit border-2 border-gray-300 justify-center">
+                <Link to="/Booking_Form">
+                  <button className="px-4 py-2 font-oswald w-fit bg-blue-600 text-white font-bold text-md">
+                    BOOK ONLINE
+                  </button>
+                </Link>
+                <Link to="/contact">
+                  <button className="px-4 py-2 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
+                    INQUIRY
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* PACKAGE 5 */}
-          <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
-            <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-              <img
-                src={Singapore05}
-                className="w-full h-full object-cover"
-                alt="Singapore"
-              />
-            </div>
+          <div className="w-full max-w-screen-2xl  mx-auto flex flex-col md:flex-row p-4">
+            <div className="flex flex-col md:flex-row mt-8 mb-8 w-full mx-auto">
+              {/* Card Container */}
+              <div className="flex md:flex-row flex-col border-2 rounded-lg border-gray-300 flex-grow">
+                {/* Image Section */}
+                <div className="w-full md:w-56 md:h-60 h-60 flex items-center justify-center">
+                  <img
+                    src={Singapore05}
+                    className="w-full h-full object-cover rounded-l-lg "
+                    alt="Bali"
+                  />
+                </div>
 
-            <div className="ml-6 md:ml-8">
-              <p className="text-lg md:text-2xl font-bold">
-                Singapore Cruise Package - Royal Caribbean
-              </p>
-              <p className="text-sm md:text-lg font-light max-w-[30rem]">
-                Night Safari, Universal Studios, Sentosa Islands, Royal
-                Caribbean Cruise
-              </p>
-              <div
-                className="flex flex-wrap md:flex-row pt-6 md:pt-12 justify-center md:justify-between
-             md:gap-5"
-              >
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPlane} className="text-md" />
+                {/* Text & Icons Section */}
+                <div className="flex flex-col ml-4 md:ml-6 flex-grow">
+                  <div className="flex flex-wrap">
+                    <p className="text-lg md:text-3xl border-b-2 border-r-2 border-gray-300 p-2 flex-grow">
+                      Singapore Cruise Package - Royal Caribbean
+                    </p>
+                    <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300 flex-shrink">
+                      4 Nights 5 Days
+                    </p>
+                  </div>
+                  <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300">
+                    Night Safari, Universal Studios, Sentosa Islands, Royal
+                    Caribbean Cruise(4N-5D)
                   </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    FLIGHTS
+                  <p className="text-md font-extralight p-2">
+                    Customized Holidays
                   </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPassport} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    VISA
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBed} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    HOTELS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faCamera} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    SIGHTSEEING
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBowlFood} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    MEALS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faUser} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    TOUR MANAGER
-                  </p>
+
+                  {/* Icons Section */}
+                  <div className="flex flex-wrap justify-center md:justify-start gap-4 text-red-600 p-2">
+                    {/* Each Icon */}
+                    {[
+                      faPlane,
+                      faPassport,
+                      faBed,
+                      faCamera,
+                      faBowlFood,
+                      faUser,
+                    ].map((icon, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-col items-center mb-4"
+                      >
+                        <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-300 cursor-pointer hover:bg-red-500 hover:text-white">
+                          <FontAwesomeIcon icon={icon} className="text-md" />
+                        </p>
+                        <p className="text-sm hidden md:block cursor-pointer mt-1">
+                          {
+                            [
+                              "FLIGHTS",
+                              "VISA",
+                              "HOTELS",
+                              "SIGHTSEEING",
+                              "MEALS",
+                              "TOUR MANAGER",
+                            ][index]
+                          }
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="h-full ml-0 md:ml-20 mt-6 md:gap-6 md:mt-10  flex flex-col md:flex-row md:items-center justify-center">
-              <Link to="/Booking_Form">
-                <button className="px-4 py-2 md:mt-6 font-oswald w-fit bg-blue-600 text-white font-bold border-none text-md">
-                  BOOK ONLINE
-                </button>
-              </Link>
-              <Link to="/contact">
-                <button className="px-4 py-2 mt-6 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
-                  INQUIRY
-                </button>
-              </Link>
+              {/* Booking & Inquiry Buttons */}
+              <div className="flex flex-row gap-1 items-center rounded-lg p-4 w-full md:w-60 md:h-60 h-fit border-2 border-gray-300 justify-center">
+                <Link to="/Booking_Form">
+                  <button className="px-4 py-2 font-oswald w-fit bg-blue-600 text-white font-bold text-md">
+                    BOOK ONLINE
+                  </button>
+                </Link>
+                <Link to="/contact">
+                  <button className="px-4 py-2 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
+                    INQUIRY
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* PACKAGE 6 */}
-          <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
-            <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-              <img
-                src={Singapore06}
-                className="w-full h-full object-cover"
-                alt="Singapore"
-              />
-            </div>
+          <div className="w-full max-w-screen-2xl  mx-auto flex flex-col md:flex-row p-4">
+            <div className="flex flex-col md:flex-row mt-8 mb-8 w-full mx-auto">
+              {/* Card Container */}
+              <div className="flex md:flex-row flex-col border-2 rounded-lg border-gray-300 flex-grow">
+                {/* Image Section */}
+                <div className="w-full md:w-56 md:h-60 h-60 flex items-center justify-center">
+                  <img
+                    src={Singapore06}
+                    className="w-full h-full object-cover rounded-l-lg "
+                    alt="Bali"
+                  />
+                </div>
 
-            <div className="ml-6 md:ml-8">
-              <p className="text-lg md:text-2xl font-bold">
-                Singapore Sparks and Bali Breeze
-              </p>
-              <p className="text-sm md:text-lg font-light max-w-[30rem]">
-                Night Safari, Universal Studios, Sentosa Islands, Royal
-                Caribbean Cruise
-              </p>
-              <div
-                className="flex flex-wrap md:flex-row pt-6 md:pt-12 justify-center md:justify-between
-             md:gap-5"
-              >
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPlane} className="text-md" />
+                {/* Text & Icons Section */}
+                <div className="flex flex-col ml-4 md:ml-6 flex-grow">
+                  <div className="flex flex-wrap">
+                    <p className="text-lg md:text-3xl border-b-2 border-r-2 border-gray-300 p-2 flex-grow">
+                      Singapore Sparks and Bali Breeze
+                    </p>
+                    <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300 flex-shrink">
+                      4 Nights 5 Days
+                    </p>
+                  </div>
+                  <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300">
+                    Night Safari, Universal Studios, Sentosa Islands, Royal
+                    Caribbean Cruise(4N-5D)
                   </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    FLIGHTS
+                  <p className="text-md font-extralight p-2">
+                    Customized Holidays
                   </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPassport} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    VISA
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBed} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    HOTELS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faCamera} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    SIGHTSEEING
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBowlFood} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    MEALS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faUser} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    TOUR MANAGER
-                  </p>
+
+                  {/* Icons Section */}
+                  <div className="flex flex-wrap justify-center md:justify-start gap-4 text-red-600 p-2">
+                    {/* Each Icon */}
+                    {[
+                      faPlane,
+                      faPassport,
+                      faBed,
+                      faCamera,
+                      faBowlFood,
+                      faUser,
+                    ].map((icon, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-col items-center mb-4"
+                      >
+                        <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-300 cursor-pointer hover:bg-red-500 hover:text-white">
+                          <FontAwesomeIcon icon={icon} className="text-md" />
+                        </p>
+                        <p className="text-sm hidden md:block cursor-pointer mt-1">
+                          {
+                            [
+                              "FLIGHTS",
+                              "VISA",
+                              "HOTELS",
+                              "SIGHTSEEING",
+                              "MEALS",
+                              "TOUR MANAGER",
+                            ][index]
+                          }
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="h-full ml-0 md:ml-20 mt-6 md:gap-6 md:mt-10  flex flex-col md:flex-row md:items-center justify-center">
-              <Link to="/Booking_Form">
-                <button className="px-4 py-2 md:mt-6 font-oswald w-fit bg-blue-600 text-white font-bold border-none text-md">
-                  BOOK ONLINE
-                </button>
-              </Link>
-              <Link to="/contact">
-                <button className="px-4 py-2 mt-6 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
-                  INQUIRY
-                </button>
-              </Link>
+              {/* Booking & Inquiry Buttons */}
+              <div className="flex flex-row gap-1 items-center rounded-lg p-4 w-full md:w-60 md:h-60 h-fit border-2 border-gray-300 justify-center">
+                <Link to="/Booking_Form">
+                  <button className="px-4 py-2 font-oswald w-fit bg-blue-600 text-white font-bold text-md">
+                    BOOK ONLINE
+                  </button>
+                </Link>
+                <Link to="/contact">
+                  <button className="px-4 py-2 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
+                    INQUIRY
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
 
           {/* PACKAGE 7 */}
-          <div className="flex flex-wrap md:flex-row p-8 mt-8 mb-8 border-2 rounded-lg border-gray-600 w-full md:max-w-7xl mx-auto">
-            <div className="w-full md:w-44 md:h-44   h-60 flex items-center justify-center">
-              <img
-                src={Singapore07}
-                className="w-full h-full object-cover"
-                alt="Singapore"
-              />
-            </div>
+          <div className="w-full max-w-screen-2xl  mx-auto flex flex-col md:flex-row p-4">
+            <div className="flex flex-col md:flex-row mt-8 mb-8 w-full mx-auto">
+              {/* Card Container */}
+              <div className="flex md:flex-row flex-col border-2 rounded-lg border-gray-300 flex-grow">
+                {/* Image Section */}
+                <div className="w-full md:w-56 md:h-60 h-60 flex items-center justify-center">
+                  <img
+                    src={Singapore07}
+                    className="w-full h-full object-cover rounded-l-lg "
+                    alt="Bali"
+                  />
+                </div>
 
-            <div className="ml-6 md:ml-8">
-              <p className="text-lg md:text-2xl font-bold">
-                Splendid Southeast: Singapore Malaysia Package
-              </p>
-              <p className="text-sm md:text-lg font-light max-w-[30rem]">
-                Night Safari, Universal Studios, Sentosa Islands, Gardens by the
-                bay, Marina Bay Sands, Singapore Zoo, Kuala Lumpur, Genting
-                Highlands, etc.
-              </p>
-              <div
-                className="flex flex-wrap md:flex-row pt-6 md:pt-12 justify-center md:justify-between
-             md:gap-5"
-              >
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPlane} className="text-md" />
+                {/* Text & Icons Section */}
+                <div className="flex flex-col ml-4 md:ml-6 flex-grow">
+                  <div className="flex flex-wrap">
+                    <p className="text-lg md:text-3xl border-b-2 border-r-2 border-gray-300 p-2 flex-grow">
+                      Splendid Southeast: Singapore Malaysia Package
+                    </p>
+                    <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300 flex-shrink">
+                      4 Nights 5 Days
+                    </p>
+                  </div>
+                  <p className="text-sm md:text-xl font-extralight p-2 border-b-2 border-gray-300">
+                    Night Safari, Universal Studios, Sentosa Islands, Gardens by
+                    the bay, Marina Bay Sands,etc....(4N-5D)
                   </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    FLIGHTS
+                  <p className="text-md font-extralight p-2">
+                    Customized Holidays
                   </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faPassport} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    VISA
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBed} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    HOTELS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faCamera} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    SIGHTSEEING
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faBowlFood} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    MEALS
-                  </p>
-                </div>
-                <div className="flex flex-col items-center mb-6 md:mb-0">
-                  <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-black cursor-pointer">
-                    <FontAwesomeIcon icon={faUser} className="text-md" />
-                  </p>
-                  <p className="text-sm hidden md:block cursor-pointer underline">
-                    TOUR MANAGER
-                  </p>
+
+                  {/* Icons Section */}
+                  <div className="flex flex-wrap justify-center md:justify-start gap-4 text-red-600 p-2">
+                    {/* Each Icon */}
+                    {[
+                      faPlane,
+                      faPassport,
+                      faBed,
+                      faCamera,
+                      faBowlFood,
+                      faUser,
+                    ].map((icon, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-col items-center mb-4"
+                      >
+                        <p className="w-8 h-8 flex items-center justify-center rounded-full border-2 border-gray-300 cursor-pointer hover:bg-red-500 hover:text-white">
+                          <FontAwesomeIcon icon={icon} className="text-md" />
+                        </p>
+                        <p className="text-sm hidden md:block cursor-pointer mt-1">
+                          {
+                            [
+                              "FLIGHTS",
+                              "VISA",
+                              "HOTELS",
+                              "SIGHTSEEING",
+                              "MEALS",
+                              "TOUR MANAGER",
+                            ][index]
+                          }
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="h-full ml-0 md:ml-20 mt-6 md:gap-6 md:mt-10  flex flex-col md:flex-row md:items-center justify-center">
-              <Link to="/Booking_Form">
-                <button className="px-4 py-2 md:mt-6 font-oswald w-fit bg-blue-600 text-white font-bold border-none text-md">
-                  BOOK ONLINE
-                </button>
-              </Link>
-              <Link to="/contact">
-                <button className="px-4 py-2 mt-6 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
-                  INQUIRY
-                </button>
-              </Link>
+              {/* Booking & Inquiry Buttons */}
+              <div className="flex flex-row gap-1 items-center rounded-lg p-4 w-full md:w-60 md:h-60 h-fit border-2 border-gray-300 justify-center">
+                <Link to="/Booking_Form">
+                  <button className="px-4 py-2 font-oswald w-fit bg-blue-600 text-white font-bold text-md">
+                    BOOK ONLINE
+                  </button>
+                </Link>
+                <Link to="/contact">
+                  <button className="px-4 py-2 font-oswald text-sm text-red-600 border-2 border-red-600 hover:bg-red-600 hover:text-white transition duration-200">
+                    INQUIRY
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
