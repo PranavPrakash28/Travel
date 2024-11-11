@@ -189,7 +189,7 @@ function Loc_Europe() {
             </p>
             <Link to="/Booking_Form">
               <button
-                className="text-lg md:text-2xl font-bold mt-8 md:mt-5 text-yellow-300 rounded-lg  py-2 px-4"
+                className="text-lg md:text-2xl font-bold mt-8 md:mt-5 text-yellow-300   py-2 px-4"
                 style={{ textShadow: '2px 2px 4px rgba(1, 0, 0.5, 2)' }}
               >
                 READ MORE
@@ -246,7 +246,7 @@ function Loc_Europe() {
             <Slider {...sliderSettings}>
               {BestDeals.map((deal, index) => (
                 <div key={index} className="p-4">
-                  <div className="h-[450px] md:h-[600px] bg-gray-100 rounded-lg flex flex-col justify-center items-center">
+                  <div className="h-[450px] md:h-[600px] bg-gray-100  flex flex-col justify-center items-center">
                     <img
                       src={deal.img}
                       alt="/"
@@ -271,7 +271,7 @@ function Loc_Europe() {
       {/* Cards Section */}
       <div className="w-full flex flex-wrap md:max-w-7xl mx-auto px-4 justify-center gap-6 mb-10 mt-20 ">
         {/* 1st card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72   rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Paris} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -294,7 +294,7 @@ function Loc_Europe() {
         </div>
 
         {/* 2nd card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Rome} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -317,7 +317,7 @@ function Loc_Europe() {
         </div>
 
         {/* 3rd card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Barcelona} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -340,7 +340,7 @@ function Loc_Europe() {
         </div>
 
         {/* 4th card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={London} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -364,7 +364,7 @@ function Loc_Europe() {
       </div>
       <div className="w-full flex flex-wrap md:max-w-7xl mx-auto px-4 justify-center gap-6 mb-10  ">
         {/* 5th card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Amsterdam} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -387,7 +387,7 @@ function Loc_Europe() {
         </div>
 
         {/* 6th card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Zurich} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -410,7 +410,7 @@ function Loc_Europe() {
         </div>
 
         {/* 7th card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Prague} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -433,7 +433,7 @@ function Loc_Europe() {
         </div>
 
         {/* 8th card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Vienna} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -458,7 +458,7 @@ function Loc_Europe() {
 
       <div className="w-full flex flex-wrap md:max-w-7xl mx-auto px-4 justify-center gap-6 mb-10 mt-20 ">
         {/* 1st card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Paris} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -481,7 +481,7 @@ function Loc_Europe() {
         </div>
 
         {/* 2nd card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Rome} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -504,7 +504,7 @@ function Loc_Europe() {
         </div>
 
         {/* 3rd card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Barcelona} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -527,7 +527,7 @@ function Loc_Europe() {
         </div>
 
         {/* 4th card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={London} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -551,7 +551,7 @@ function Loc_Europe() {
       </div>
       <div className="w-full flex flex-wrap md:max-w-7xl mx-auto px-4 justify-center gap-6 mb-10  ">
         {/* 5th card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Amsterdam} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -574,7 +574,7 @@ function Loc_Europe() {
         </div>
 
         {/* 6th card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Zurich} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -597,7 +597,7 @@ function Loc_Europe() {
         </div>
 
         {/* 7th card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Prague} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
@@ -620,7 +620,7 @@ function Loc_Europe() {
         </div>
 
         {/* 8th card */}
-        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72  rounded-lg  rounded-md font-oswald mx-auto overflow-hidden">
+        <div className="relative w-full sm:w-64 lg:w-64 h-auto sm:h-48 lg:h-72    rounded-md font-oswald mx-auto overflow-hidden">
           <img src={Vienna} alt="/" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-2 left-2 text-white">
